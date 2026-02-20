@@ -4,7 +4,7 @@ export const EventsPage = () => {
     return `
     ${PageHeader(
         'Events & Celebrations',
-        'Experience the vibrant life at SNS Academy through our memorable events, celebrations, and activities',
+        'Experience the vibrant campus life at SNSCAHS through our memorable events and academic clinical meets',
         '/static/images/SNS Academy Web/Events.webp',
         'Events'
     )}
@@ -59,7 +59,7 @@ export const EventsPage = () => {
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <div>
                             <h3 class="text-white font-bold text-2xl mb-2">Green Day Celebration</h3>
-                            <p class="text-white/90 text-sm mb-3">Our little learners of SNS Academy had stepped out of their classrooms and into nature as part of Green Day celebrations. Taken to the lush lawn areas, children were introduced to the importance of greenery, plants, and caring for our environment. A beautiful day filled with curiosity, smiles, and meaningful lessons—planting the seeds of environmental responsibility from an early age.</p>
+                            <p class="text-white/90 text-sm mb-3">Our students took a step towards sustainability during our Green Day celebrations. Exploring the importance of environmental responsibility in healthcare settings and beyond, we continue to nurture a greener future together.</p>
                             <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
                                 <span><i class="fas fa-calendar mr-1"></i> Jan 2026</span>
                                 <span><i class="fas fa-leaf mr-1"></i> Environment</span>
@@ -87,11 +87,11 @@ export const EventsPage = () => {
                     <!-- Hover overlay with full details -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                         <div>
-                            <h3 class="text-white font-bold text-2xl mb-2">Little Chef</h3>
-                            <p class="text-white/90 text-sm mb-3">Our kindergarten students of SNS Academy, joyfully stepped into the role of little chefs during a fun-filled Salad Making Activity. With colourful vegetables, curious minds, and happy smiles, children explored healthy eating while engaging in hands-on culinary learning. This delightful activity encouraged creativity, teamwork, and awareness about nutritious food—making learning both tasty and meaningful!</p>
+                            <h3 class="text-white font-bold text-2xl mb-2">Culinary Meets</h3>
+                            <p class="text-white/90 text-sm mb-3">Promoting health and nutrition, our students engaged in culinary workshops focusing on balanced diets and clinical nutrition. Engaging in hands-on learning, they explored the intersection of food and healthcare excellence.</p>
                             <div class="flex items-center text-white/80 text-xs space-x-4 mb-3">
                                 <span><i class="fas fa-calendar mr-1"></i> Jan 2026</span>
-                                <span><i class="fas fa-utensils mr-1"></i> Kindergarten</span>
+                                <span><i class="fas fa-utensils mr-1"></i> Nutrition</span>
                             </div>
                             <a href="https://www.instagram.com/p/DTJlHSKExme/?img_index=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur text-white px-4 py-2 rounded-lg text-xs font-semibold transition border border-white/30">
                                 <i class="fas fa-arrow-right mr-2"></i> Read More
@@ -199,7 +199,7 @@ export const EventsPage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Be Part of Our Vibrant Community</h2>
             <p class="text-xl text-gray-600 mb-8">
-                Join SNS Academy and create unforgettable memories through our diverse events and celebrations!
+                Join SNS College of Allied Health Sciences and create professional networks and lifelong memories!
             </p>
             <a href="/admissions" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
                 <i class="fas fa-pen-to-square mr-2"></i>

@@ -10,11 +10,11 @@ export const GalleryPage = () => {
         'Gallery'
     )}
 
-    <!-- Life at SNS Academy -->
+    <!-- Life at SNSCAHS -->
     <section class="py-16 bg-gradient-to-br from-yellow-50 to-orange-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4">Life @ SNS Academy</h2>
-            <p class="text-center text-xl text-gray-600 mb-12">Where learning meets joy, and every day is an adventure!</p>
+            <h2 class="text-4xl font-bold text-center mb-4">Life @ SNSCAHS</h2>
+            <p class="text-center text-xl text-gray-600 mb-12">Where clinical excellence meets academic brilliance!</p>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-2xl overflow-hidden shadow-xl card-hover">
@@ -26,8 +26,8 @@ export const GalleryPage = () => {
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Little Graduates</h3>
-                        <p class="text-gray-600">Celebrating achievements and milestones of our youngest learners</p>
+                        <h3 class="text-2xl font-bold mb-2">Graduation Ceremony</h3>
+                        <p class="text-gray-600">Celebrating the academic clinical success of our future healthcare leaders</p>
                     </div>
                 </div>
                 
@@ -54,8 +54,8 @@ export const GalleryPage = () => {
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold mb-2">Happy Environment</h3>
-                        <p class="text-gray-600">Nurturing positive atmosphere where every child thrives</p>
+                        <h3 class="text-2xl font-bold mb-2">Nurturing Excellence</h3>
+                        <p class="text-gray-600">Fostering a professional and supportive atmosphere where every aspirant thrives</p>
                     </div>
                 </div>
             </div>
@@ -65,8 +65,8 @@ export const GalleryPage = () => {
     <!-- School Blocks -->
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-4">School Campus</h2>
-            <p class="text-center text-xl text-gray-600 mb-12">Wi-Fi enabled campus with smart classrooms and modern facilities</p>
+            <h2 class="text-4xl font-bold text-center mb-4">College Campus</h2>
+            <p class="text-center text-xl text-gray-600 mb-12">Advanced campus facilities with specialized clinical labs and research centers</p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                 <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-lg">
@@ -96,20 +96,20 @@ export const GalleryPage = () => {
 
             <div class="grid md:grid-cols-4 gap-6">
                 <div class="bg-white rounded-xl p-6 shadow-md text-center">
-                    <i class="fas fa-door-open text-4xl text-indigo-600 mb-3"></i>
-                    <h4 class="font-bold">Reception</h4>
+                    <i class="fas fa-hospital-user text-4xl text-indigo-600 mb-3"></i>
+                    <h4 class="font-bold">Clinical Reception</h4>
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-md text-center">
-                    <i class="fas fa-chalkboard text-4xl text-blue-600 mb-3"></i>
-                    <h4 class="font-bold">Smart Classrooms</h4>
+                    <i class="fas fa-microscope text-4xl text-blue-600 mb-3"></i>
+                    <h4 class="font-bold">Advanced Bio-Labs</h4>
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-md text-center">
-                    <i class="fas fa-baby text-4xl text-pink-600 mb-3"></i>
-                    <h4 class="font-bold">Pre-KG</h4>
+                    <i class="fas fa-stethoscope text-4xl text-pink-600 mb-3"></i>
+                    <h4 class="font-bold">Diagnostic Wing</h4>
                 </div>
                 <div class="bg-white rounded-xl p-6 shadow-md text-center">
-                    <i class="fas fa-child text-4xl text-purple-600 mb-3"></i>
-                    <h4 class="font-bold">LKG & UKG</h4>
+                    <i class="fas fa-search-plus text-4xl text-purple-600 mb-3"></i>
+                    <h4 class="font-bold">Research Center</h4>
                 </div>
             </div>
         </div>
@@ -507,7 +507,7 @@ export const SportsClubsPage = () => {
             <p class="text-xl mb-8">Join our sports teams and clubs to unlock your potential!</p>
             <a href="/admissions" class="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-block">
                 <i class="fas fa-trophy mr-2"></i>
-                Join SNS Academy
+                Join SNSCAHS
             </a>
         </div>
     </section>

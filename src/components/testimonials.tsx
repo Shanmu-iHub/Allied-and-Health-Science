@@ -1,18 +1,18 @@
 export const ParentsTestimonialsCarousel = () => {
-  const avatarIcon = `
+    const avatarIcon = `
     <svg aria-hidden="true" viewBox="0 0 24 24" class="w-9 h-9 text-white/95">
       <path fill="currentColor" d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5Zm0 2c-3.866 0-7 3.134-7 7v1h14v-1c0-3.866-3.134-7-7-7Z" />
     </svg>
   `;
 
-  return `
+    return `
     <!-- Parents Testimonials Section -->
     <section class="py-16 bg-gradient-to-br from-orange-50 to-red-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Parents Say About Us</h2>
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Community Says</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Hear from the parents who trust SNS Academy with their children's future
+                    Hear from the students and parents who trust SNS Allied Health Science with their future
                 </p>
             </div>
 
@@ -29,8 +29,8 @@ export const ParentsTestimonialsCarousel = () => {
                                         ${avatarIcon}
                                     </div>
                                     <div>
-                                        <h4 class="text-xl font-bold text-gray-900">Mrs. Priya Sharma</h4>
-                                        <p class="text-gray-600">Parent of Grade X Student</p>
+                                        <h4 class="text-xl font-bold text-gray-900">John Samuel</h4>
+                                        <p class="text-gray-600">B.Sc. Cardiac Technology Student</p>
                                     </div>
                                 </div>
                                 <div class="mb-4">
@@ -41,11 +41,11 @@ export const ParentsTestimonialsCarousel = () => {
                                     <i class="fas fa-star text-yellow-500"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "SNS Academy has transformed my daughter's approach to learning. The Stanford-trained faculty and design thinking methodology have made her a creative problem-solver. She's not just scoring well academically but also developing real-world skills. The personalized attention with 10:1 ratio is truly commendable."
+                                    "The clinical training at SNS Allied Health Science is truly world-class. Being able to observe live cardiac procedures at partnered hospitals while learning the theory in class has been amazing. The Design Thinking workshops helped me understand patient anxiety and how to provide better care."
                                 </p>
                                 <div class="flex items-center text-orange-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
-                                    <span>Verified Parent Review</span>
+                                    <span>Verified Student Review</span>
                                 </div>
                             </div>
                         </div>
@@ -58,8 +58,8 @@ export const ParentsTestimonialsCarousel = () => {
                                         ${avatarIcon}
                                     </div>
                                     <div>
-                                        <h4 class="text-xl font-bold text-gray-900">Mr. Rajesh Kumar</h4>
-                                        <p class="text-gray-600">Parent of Grade VII Student</p>
+                                        <h4 class="text-xl font-bold text-gray-900">Meera Krishnan</h4>
+                                        <p class="text-gray-600">B.Sc. Physician Assistant Student</p>
                                     </div>
                                 </div>
                                 <div class="mb-4">
@@ -70,11 +70,11 @@ export const ParentsTestimonialsCarousel = () => {
                                     <i class="fas fa-star text-yellow-500"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "The innovation labs and STEM focus at SNS Academy are exceptional. My son has participated in 3 national robotics competitions this year! The school's emphasis on both academics and innovation through SNS iHub is preparing him for future challenges. Highly recommend for parents seeking holistic development."
+                                    "Choosing SNSCAHS was the best decision for my healthcare career. The faculty are extremely knowledgeable and the hospital connect programs are excellent. The emphasis on 'Empathy' in our Design Thinking curriculum has shaped the way I interact with patients during my clinical rounds."
                                 </p>
                                 <div class="flex items-center text-orange-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
-                                    <span>Verified Parent Review</span>
+                                    <span>Verified Student Review</span>
                                 </div>
                             </div>
                         </div>
@@ -87,8 +87,8 @@ export const ParentsTestimonialsCarousel = () => {
                                         ${avatarIcon}
                                     </div>
                                     <div>
-                                        <h4 class="text-xl font-bold text-gray-900">Mrs. Anita Menon</h4>
-                                        <p class="text-gray-600">Parent of Grade V Student</p>
+                                        <h4 class="text-xl font-bold text-gray-900">Dr. Arul Prakash</h4>
+                                        <p class="text-gray-600">Alumnus, SNSCAHS</p>
                                     </div>
                                 </div>
                                 <div class="mb-4">
@@ -99,11 +99,11 @@ export const ParentsTestimonialsCarousel = () => {
                                     <i class="fas fa-star text-yellow-500"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "What sets SNS Academy apart is their genuine care for each child's overall development. The SPINE wellness program, 25+ clubs, and sports facilities are outstanding. My daughter loves the fingerprint approach where her unique talents are recognized and nurtured. The teachers are experienced and truly dedicated."
+                                    "The technical expertise I gained at SNS College of Allied Health Sciences was instrumental in my career progression. The focus on RADICAL technologies and real-world clinical problem solving sets this institution apart from traditional colleges. I am proud to be an alumnus."
                                 </p>
                                 <div class="flex items-center text-orange-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>
-                                    <span>Verified Parent Review</span>
+                                    <span>Verified Alumni Review</span>
                                 </div>
                             </div>
                         </div>
@@ -116,8 +116,8 @@ export const ParentsTestimonialsCarousel = () => {
                                         ${avatarIcon}
                                     </div>
                                     <div>
-                                        <h4 class="text-xl font-bold text-gray-900">Dr. Vijay Narayan</h4>
-                                        <p class="text-gray-600">Parent of Grade XII Student</p>
+                                        <h4 class="text-xl font-bold text-gray-900">Mrs. Kavitha Murthy</h4>
+                                        <p class="text-gray-600">Parent of B.Sc. Radiography Student</p>
                                     </div>
                                 </div>
                                 <div class="mb-4">
@@ -128,7 +128,7 @@ export const ParentsTestimonialsCarousel = () => {
                                     <i class="fas fa-star text-yellow-500"></i>
                                 </div>
                                 <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                                    "SNS Academy's Stanford pathway program is phenomenal! My son secured admission to IIT thanks to the rigorous preparation and design thinking mindset developed here. The focus on innovation, leadership, and academic excellence truly prepares students for elite universities. Worth every investment!"
+                                    "Highly impressed with the infrastructure and the quality of teaching at SNS College of Allied Health Sciences. The college provides a perfect blend of academic rigor and practical industry exposure. My son is thriving in this environment and is very excited about his future in medical imaging."
                                 </p>
                                 <div class="flex items-center text-orange-600 font-semibold">
                                     <i class="fas fa-check-circle mr-2"></i>

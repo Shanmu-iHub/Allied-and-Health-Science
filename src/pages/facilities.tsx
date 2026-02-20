@@ -3,8 +3,8 @@ import { PageHeader } from '../components/page-header'
 export const FacilitiesPage = () => {
     return `
     ${PageHeader(
-        'World-Class Infrastructure', 
-        'Everything your child needs for holistic development under one roof—unlocking their potential at the SPINE Activity Center', 
+        'World-Class Infrastructure',
+        'Professional-grade facilities designed to foster clinical expertise, innovation, and holistic wellness',
         '/static/images/hero5.png',
         'Facilities'
     )}
@@ -16,7 +16,7 @@ export const FacilitiesPage = () => {
                 <span class="text-orange-600 font-bold tracking-wider uppercase text-sm mb-2 block">Student Life</span>
                 <h2 class="text-4xl font-bold text-gray-900 mb-6">SNS SPINE Activity Center</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    A 5-level world-class activity center for sports, arts, entertainment, and wellness. 
+                    A 5-level premier activity center for sports, wellness, and recreation, ensuring a balanced student life. 
                 </p>
             </div>
 
@@ -197,9 +197,9 @@ export const FacilitiesPage = () => {
     <section class="py-20 bg-gradient-to-r from-pink-600 to-orange-600 text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-black/10"></div>
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 class="text-4xl lg:text-5xl font-bold mb-6">Experience It In Person</h2>
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6">Visit Our Campus</h2>
             <p class="text-xl lg:text-2xl mb-10 text-white/90 font-light">
-                Words and pictures can only say so much. Schedule a visit to see our world-class campus.
+                Experience our professional environment and state-of-the-art clinical laboratories in person.
             </p>
             <a href="/contact" class="bg-white text-pink-600 hover:bg-gray-100 px-10 py-5 rounded-xl font-bold text-xl shadow-xl transition transform hover:scale-105 inline-block">
                 Schedule Campus Tour

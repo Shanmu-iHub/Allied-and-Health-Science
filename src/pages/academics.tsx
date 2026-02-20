@@ -4,10 +4,10 @@ import { PageHeader } from '../components/page-header'
 export const PrePrimaryPage = () => {
     return `
     ${PageHeader(
-        'Pre-Primary Education', 
-        'Building strong foundations through play-based learning, curiosity, and early childhood development', 
-        '/static/images/pre-primary.png',
-        'Pre-Primary (Ages 2.5 - 5 Years)'
+        'B.Sc. Cardiac Technology',
+        'Specialized undergraduate program focusing on invasive and non-invasive cardiovascular procedures',
+        'https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Cardiac-Technology.jpg',
+        'B.Sc. Cardiac Technology (4 Years)'
     )}
 
     <!-- Program Overview -->
@@ -15,159 +15,74 @@ export const PrePrimaryPage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                     <span class="text-purple-600 font-bold tracking-wider uppercase text-sm mb-2 block">Our Philosophy</span>
-                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Discovery Through Play</h2>
+                     <span class="text-red-600 font-bold tracking-wider uppercase text-sm mb-2 block">Program Focus</span>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Mastering Cardiac Care</h2>
                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                        Every parent appreciates that these early years in education are a time of curiosity, discovery, and learning. Our Preschool curriculum is inquiry and play-based, with a strong focus on developing early Literacy and Numeracy skills.
+                        Cardiac Technology is an area of specialization for allied health professionals who assist physicians in the diagnosis and treatment of cardiac (heart) and peripheral vascular (blood vessel) conditions.
                     </p>
                     <p class="text-lg text-gray-600 leading-relaxed">
-                        Great emphasis is placed on developing early reading and writing skills, so that each child is given a "head start" in their education. The wonderful world of stories, nursery rhymes, songs, role-play, and drama within a language-rich learning environment stimulates children's curiosity.
+                        At SNSCAHS, students gain hands-on experience in cardiac catheterization laboratories and non-invasive diagnostic centers, learning to operate complex equipment and provide critical support during life-saving procedures.
                     </p>
                 </div>
                 <div class="relative">
-                     <div class="absolute -top-4 -right-4 w-32 h-32 bg-purple-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
-                     <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-pink-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70"></div>
-                    <img src="/static/images/SNS Academy Web/Pre-Primary Education.png" alt="Happy Kindergarten Students" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
+                    <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Cardiac-Technology.jpg" alt="Cardiac Technology Lab" class="relative rounded-2xl shadow-2xl w-full object-cover h-[500px]">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Age Groups -->
+    <!-- Key Learning Areas -->
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Pre-Primary Programs</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Tailored learning experiences for every stage of early childhood.</p>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Course Framework</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive curriculum covering anatomy, physiology, and advanced cardiac care.</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Nursery -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:-translate-y-1 transition duration-300">
-                    <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-baby text-3xl text-purple-600"></i>
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-heart-pulse text-3xl text-red-600"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Nursery (2.5-3.5 years)</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Diagnostics</h3>
                     <p class="text-gray-600 mb-6 leading-relaxed text-sm">
-                        Our youngest students enjoy a hands-on, fun curriculum with opportunities to think, speak, and listen in various situations.
+                        Mastery of ECG, Holter monitoring, and Treadmill Test (TMT) protocols for heart evaluation.
                     </p>
-                    <ul class="space-y-3 text-sm text-gray-500">
-                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Communication & language</li>
-                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Indoor & outdoor learning</li>
-                        <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2"></i>Motor skills development</li>
-                    </ul>
                 </div>
 
-                <!-- LKG -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:-translate-y-1 transition duration-300">
-                    <div class="w-16 h-16 bg-pink-100 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-child-reaching text-3xl text-pink-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Lower KG (3.5-4.5 years)</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">
-                        More structured day with emphasis on early English and Mathematics skills, while maintaining a balanced program.
-                    </p>
-                    <ul class="space-y-3 text-sm text-gray-500">
-                         <li class="flex items-center"><i class="fas fa-check text-pink-500 mr-2"></i>Phonics & early reading</li>
-                        <li class="flex items-center"><i class="fas fa-check text-pink-500 mr-2"></i>Basic mathematics concepts</li>
-                        <li class="flex items-center"><i class="fas fa-check text-pink-500 mr-2"></i>Creative arts & design</li>
-                    </ul>
-                </div>
-
-                <!-- UKG -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg hover:-translate-y-1 transition duration-300">
                     <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-child text-3xl text-blue-600"></i>
+                        <i class="fas fa-file-medical text-3xl text-blue-600"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Upper KG (4.5-5.5 years)</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Echocardiography</h3>
                     <p class="text-gray-600 mb-6 leading-relaxed text-sm">
-                        Preparing for formal schooling with advanced literacy and numeracy skills, critical thinking, and creativity.
+                        Comprehensive training in 2D and 3D Echo, Doppler studies, and ultrasound imaging of the heart.
                     </p>
-                    <ul class="space-y-3 text-sm text-gray-500">
-                         <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Blending & segmentation</li>
-                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>Early writing skills</li>
-                        <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i>School readiness preparation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Learning Programs -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-16">
-                <!-- Literacy Program -->
-                <div class="bg-blue-50 rounded-3xl p-10">
-                    <div class="flex items-center mb-6">
-                        <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mr-4 shadow-sm">
-                            <i class="fas fa-book-open text-2xl text-blue-600"></i>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900">Literacy Programme</h3>
-                    </div>
-                    <p class="text-gray-700 leading-relaxed mb-8">
-                        We place great emphasis on developing early Literacy skills to provide your child with a 'head start' in their education. Through well-established literacy programmes, children are taught fundamental skills essential for early reading and writing success.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Fun and interactive introduction to alphabetic sounds and phonics</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Letter recognition and sound association</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-blue-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Early reading and writing development</span>
-                        </li>
-                    </ul>
                 </div>
 
-                <!-- Numeracy Program -->
-                <div class="bg-green-50 rounded-3xl p-10">
-                    <div class="flex items-center mb-6">
-                        <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mr-4 shadow-sm">
-                            <i class="fas fa-calculator text-2xl text-green-600"></i>
-                        </div>
-                        <h3 class="text-3xl font-bold text-gray-900">Numeracy Programme</h3>
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:-translate-y-1 transition duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-stethoscope text-3xl text-green-600"></i>
                     </div>
-                    <p class="text-gray-700 leading-relaxed mb-8">
-                        Our Numeracy programme draws on the young child's natural mathematical interest and encourages numerical proficiency. Children participate in meaningful and fun activities that build their initial understanding.
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Clinical Support</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+                        Assisting in Angioplasty, Pacemaker implantation, and other invasive cardiac interventions.
                     </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Number recognition and counting</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Shapes, patterns, and spatial awareness</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Real-life mathematical experiences</span>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="py-24 bg-purple-900 text-white relative overflow-hidden">
-         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+    <section class="py-24 bg-red-900 text-white relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 class="text-4xl font-bold mb-6">Give Your Child the Best Start</h2>
-            <p class="text-xl mb-10 text-purple-100 font-light">
-                Join SNS Academy's Pre-Primary program and watch your child thrive.
+            <h2 class="text-4xl font-bold mb-6">Secure Your Future in Cardiac Care</h2>
+            <p class="text-xl mb-10 text-red-100 font-light">
+                Join the B.Sc. Cardiac Technology program at SNS College of Allied Health Sciences.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/admissions" class="bg-white text-purple-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
+                <a href="/admissions" class="bg-white text-red-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
                     Apply for Admission
-                </a>
-                <a href="/contact" class="bg-purple-800 border border-purple-700 hover:bg-purple-700 px-10 py-4 rounded-full font-bold text-lg transition shrink-0">
-                    Schedule Visit
                 </a>
             </div>
         </div>
@@ -178,10 +93,10 @@ export const PrePrimaryPage = () => {
 export const PrimaryPage = () => {
     return `
     ${PageHeader(
-        'Primary Education', 
-        'Exploratory learning and explicit core skills for a strong educational foundation', 
-        '/static/images/primary.png',
-        'Primary (Grades 1 - 5)'
+        'B.Sc. Physician Assistant',
+        'Preparing skilled clinical professionals to support physicians in diverse medical environments',
+        'https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Physicia-Assistant.jpg',
+        'B.Sc. Physician Assistant (4 Years)'
     )}
 
     <!-- Overview -->
@@ -189,51 +104,49 @@ export const PrimaryPage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <span class="text-orange-600 font-bold tracking-wider uppercase text-sm mb-2 block">Curriculum</span>
-                    <h2 class="text-4xl font-bold text-gray-900 mb-6">CBSE with Innovation</h2>
+                    <span class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">Clinical Excellence</span>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Versatile Healthcare Support</h2>
                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                        SNS Academy follows CBSE Curriculum enhanced with design thinking methodologies. Core English and Mathematics skills are explicitly taught from foundation, while the broader skills of Literacy and Numeracy are developed across all subject areas.
+                        Physician Assistants are healthcare professionals licensed to practice medicine with physician supervision. Our program at SNSCAHS provides a broad medical education that enables graduates to work in various medical and surgical specialties.
                     </p>
                     <p class="text-lg text-gray-600 leading-relaxed">
-                        All classrooms are equipped with smart boards which are used regularly to facilitate learning, making education interactive and engaging.
+                        Students are trained to perform physical exams, diagnose and treat illnesses, order and interpret tests, counsel on preventive health care, and assist in surgery.
                     </p>
                 </div>
                 <div class="relative">
-                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-orange-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-                     <div class="absolute -bottom-4 -left-4 w-24 h-24 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-                    <img src="/static/images/SNS Academy Web/Primary Education.png" alt="Primary Classroom" class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px]">
+                    <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Physicia-Assistant.jpg" alt="Physician Assistant Clinical Training" class="relative rounded-2xl shadow-2xl w-full object-cover h-[400px]">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Goals Box -->
+    <!-- Program Goals -->
     <section class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-3xl p-12 shadow-sm border border-gray-100">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl font-bold text-gray-900">Our Primary Goals</h2>
+                    <h2 class="text-3xl font-bold text-gray-900">Program Outcomes</h2>
                 </div>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="text-center">
-                        <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 text-blue-600 text-2xl"><i class="fas fa-globe"></i></div>
-                        <h3 class="font-bold text-gray-900 mb-2">Global Citizens</h3>
-                        <p class="text-sm text-gray-500">Equipping children for a globalized world</p>
+                        <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4 text-blue-600 text-2xl"><i class="fas fa-stethoscope"></i></div>
+                        <h3 class="font-bold text-gray-900 mb-2">Clinical Skills</h3>
+                        <p class="text-sm text-gray-500">Expertise in patient assessment and diagnosis</p>
                     </div>
                      <div class="text-center">
-                        <div class="w-16 h-16 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-4 text-green-600 text-2xl"><i class="fas fa-graduation-cap"></i></div>
-                        <h3 class="font-bold text-gray-900 mb-2">Successful Learners</h3>
-                        <p class="text-sm text-gray-500">Developing independent study skills</p>
+                        <div class="w-16 h-16 mx-auto bg-green-50 rounded-full flex items-center justify-center mb-4 text-green-600 text-2xl"><i class="fas fa-notes-medical"></i></div>
+                        <h3 class="font-bold text-gray-900 mb-2">Medical Knowledge</h3>
+                        <p class="text-sm text-gray-500">Deep understanding of medical sciences</p>
                     </div>
                      <div class="text-center">
-                        <div class="w-16 h-16 mx-auto bg-orange-50 rounded-full flex items-center justify-center mb-4 text-orange-600 text-2xl"><i class="fas fa-hands-helping"></i></div>
-                        <h3 class="font-bold text-gray-900 mb-2">Social Justice</h3>
-                        <p class="text-sm text-gray-500">Fostering strong community values</p>
+                        <div class="w-16 h-16 mx-auto bg-orange-50 rounded-full flex items-center justify-center mb-4 text-orange-600 text-2xl"><i class="fas fa-user-md"></i></div>
+                        <h3 class="font-bold text-gray-900 mb-2">Professionalism</h3>
+                        <p class="text-sm text-gray-500">Ethical practice and empathetic care</p>
                     </div>
                      <div class="text-center">
-                        <div class="w-16 h-16 mx-auto bg-purple-50 rounded-full flex items-center justify-center mb-4 text-purple-600 text-2xl"><i class="fas fa-brain"></i></div>
-                        <h3 class="font-bold text-gray-900 mb-2">Critical Thinking</h3>
-                        <p class="text-sm text-gray-500">Encouraging creative problem solving</p>
+                        <div class="w-16 h-16 mx-auto bg-purple-50 rounded-full flex items-center justify-center mb-4 text-purple-600 text-2xl"><i class="fas fa-hospital-user"></i></div>
+                        <h3 class="font-bold text-gray-900 mb-2">Collaborative Care</h3>
+                        <p class="text-sm text-gray-500">Working effectively in healthcare teams</p>
                     </div>
                 </div>
             </div>
@@ -241,19 +154,15 @@ export const PrimaryPage = () => {
     </section>
     
     <!-- CTA -->
-    <section class="py-24 bg-orange-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+    <section class="py-24 bg-blue-900 text-white relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 class="text-4xl font-bold mb-6">Nurture Your Child's Potential</h2>
-            <p class="text-xl mb-10 text-orange-100 font-light">
-                Experience world-class primary education with design thinking approach.
+            <h2 class="text-4xl font-bold mb-6">Become a Skilled Physician Assistant</h2>
+            <p class="text-xl mb-10 text-blue-100 font-light">
+                Join our industry-aligned program and start your medical career.
             </p>
              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/admissions" class="bg-white text-orange-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
+                <a href="/admissions" class="bg-white text-blue-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
                     Apply for Admission
-                </a>
-                <a href="/contact" class="bg-orange-800 border border-orange-700 hover:bg-orange-700 px-10 py-4 rounded-full font-bold text-lg transition shrink-0">
-                    Schedule Visit
                 </a>
             </div>
         </div>
@@ -264,10 +173,10 @@ export const PrimaryPage = () => {
 export const MiddleSchoolPage = () => {
     return `
     ${PageHeader(
-        'Middle School Education', 
-        'Developing critical thinking, problem-solving, and collaborative skills through project-based learning', 
-        '/static/images/middle.png',
-        'Middle School (Grades 6 - 8)'
+        'B.Sc. Radiography & Imaging Technology',
+        'Advanced training in medical imaging modalities for accurate diagnosis and clinical insights',
+        'https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Radiography-and-Imaging-Technology.jpg',
+        'B.Sc. Radiography & Imaging (4 Years)'
     )}
 
     <!-- Program Overview -->
@@ -275,33 +184,33 @@ export const MiddleSchoolPage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                     <span class="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">Building Stage</span>
-                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Building The Future</h2>
+                     <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm mb-2 block">Imaging Vertical</span>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Visualizing Health</h2>
                     <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                        Middle school focus on the Building Stage, where students master the design thinking framework and begin applying it to real-world challenges. This critical phase prepares students for advanced academic pursuits and develops entrepreneurial mindsets.
+                        Radiography and Imaging Technology is essential in modern medicine for diagnosing and treating various diseases and injuries. Our program provides in-depth knowledge of radiology imaging techniques and equipment.
                     </p>
                     <p class="text-lg text-gray-600 leading-relaxed">
-                        Our curriculum combines rigorous CBSE academics with hands-on projects, critical reasoning, and collaborative problem-solving, ensuring students develop both knowledge and practical skills.
+                        At SNSCAHS, we emphasize safe radiation practices and patient care, training students to produce high-quality diagnostic images using state-of-the-art modalities.
                     </p>
                 </div>
-                <div class="bg-blue-50 rounded-3xl p-10">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Key Focus Areas</h3>
+                <div class="bg-emerald-50 rounded-3xl p-10">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Key Modalities</h3>
                     <ul class="space-y-4">
                         <li class="flex items-start">
-                             <div class="w-6 h-6 rounded-full bg-blue-200 flex items-center justify-center mr-3 mt-0.5"><i class="fas fa-check text-blue-700 text-xs"></i></div>
-                            <span class="text-gray-700">Design Thinking Framework Mastery</span>
+                             <div class="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center mr-3 mt-0.5"><i class="fas fa-check text-emerald-700 text-xs"></i></div>
+                            <span class="text-gray-700">Digital X-Ray Systems</span>
                         </li>
                         <li class="flex items-start">
-                             <div class="w-6 h-6 rounded-full bg-blue-200 flex items-center justify-center mr-3 mt-0.5"><i class="fas fa-check text-blue-700 text-xs"></i></div>
-                            <span class="text-gray-700">Critical Thinking & Problem Solving</span>
+                             <div class="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center mr-3 mt-0.5"><i class="fas fa-check text-emerald-700 text-xs"></i></div>
+                            <span class="text-gray-700">Computed Tomography (CT)</span>
                         </li>
                         <li class="flex items-start">
-                             <div class="w-6 h-6 rounded-full bg-blue-200 flex items-center justify-center mr-3 mt-0.5"><i class="fas fa-check text-blue-700 text-xs"></i></div>
-                            <span class="text-gray-700">Real-World Projects</span>
+                             <div class="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center mr-3 mt-0.5"><i class="fas fa-check text-emerald-700 text-xs"></i></div>
+                            <span class="text-gray-700">Magnetic Resonance Imaging (MRI)</span>
                         </li>
                         <li class="flex items-start">
-                             <div class="w-6 h-6 rounded-full bg-blue-200 flex items-center justify-center mr-3 mt-0.5"><i class="fas fa-check text-blue-700 text-xs"></i></div>
-                            <span class="text-gray-700">Team Collaboration & Communication</span>
+                             <div class="w-6 h-6 rounded-full bg-emerald-200 flex items-center justify-center mr-3 mt-0.5"><i class="fas fa-check text-emerald-700 text-xs"></i></div>
+                            <span class="text-gray-700">Ultrasound & Mammography</span>
                         </li>
                     </ul>
                 </div>
@@ -309,12 +218,12 @@ export const MiddleSchoolPage = () => {
         </div>
     </section>
 
-    <!-- Design Thinking Framework Grid -->
+    <!-- Design Thinking in Medicine -->
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Design Thinking in Action</h2>
-                <p class="text-gray-600">The 5-step process our middle school students apply to every project.</p>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Design Thinking in Imaging</h2>
+                <p class="text-gray-600">Enhancing patient experience and accuracy through clinical empathy.</p>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -343,19 +252,15 @@ export const MiddleSchoolPage = () => {
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-blue-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+    <section class="py-24 bg-emerald-900 text-white relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h2 class="text-4xl font-bold mb-6">Join Our Middle School Community</h2>
-            <p class="text-xl mb-10 text-blue-100 font-light">
-                Give your child the opportunity to develop critical thinking, creativity, and problem-solving skills.
+            <h2 class="text-4xl font-bold mb-6">Expertise in Medical Imaging</h2>
+            <p class="text-xl mb-10 text-emerald-100 font-light">
+                Launch your career in radiology with our specialized B.Sc. program.
             </p>
              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/admissions" class="bg-white text-blue-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
+                <a href="/admissions" class="bg-white text-emerald-900 hover:bg-gray-100 px-10 py-4 rounded-full font-bold text-lg transition shadow-lg shrink-0">
                     Apply for Admission
-                </a>
-                <a href="/contact" class="bg-blue-800 border border-blue-700 hover:bg-blue-700 px-10 py-4 rounded-full font-bold text-lg transition shrink-0">
-                    Schedule Visit
                 </a>
             </div>
         </div>

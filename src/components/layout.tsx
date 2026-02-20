@@ -8,11 +8,45 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>${title} | SNS Academy - Design Thinking CBSE School Coimbatore</title>
-        <meta name="description" content="SNS Academy - India's first Design Thinking CBSE school in Coimbatore. Nursery to Grade XII with world-class facilities.">
+        <title>${title} | SNS College of Allied Health Science - India's First Design Thinking Institution</title>
+        <meta name="description" content="SNS College of Allied Health Science (SNSCAHS) - India's first Design Thinking Allied Health Science college in Coimbatore. Offering B.Sc. Cardiac Technology, Physician Assistant, and more.">
         
         <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: {
+                                50: '#f0f9ff',
+                                100: '#e0f2fe',
+                                200: '#bae6fd',
+                                300: '#7dd3fc',
+                                400: '#38bdf8',
+                                500: '#00A0E3',
+                                600: '#0284c7',
+                                700: '#0369a1',
+                                800: '#075985',
+                                900: '#0c4a6e',
+                            },
+                            orange: {
+                                50: '#f0f9ff',
+                                100: '#e0f2fe',
+                                200: '#bae6fd',
+                                300: '#7dd3fc',
+                                400: '#38bdf8',
+                                500: '#00A0E3',
+                                600: '#0284c7',
+                                700: '#0369a1',
+                                800: '#075985',
+                                900: '#0c4a6e',
+                            }
+                        }
+                    }
+                }
+            }
+        </script>
         
         <!-- Font Awesome -->
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
@@ -28,21 +62,21 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             html { scroll-behavior: smooth; }
             
             .gradient-bg {
-                background: linear-gradient(-45deg, #dc2626, #ea580c, #f97316, #fb923c);
+                background: linear-gradient(-45deg, #00A0E3, #0085bd, #33b3e9, #b2e3f7);
                 background-size: 400% 400%;
                 animation: gradient 15s ease infinite;
             }
             
             /* Gradient Text Effect */
             .gradient-text {
-                background: linear-gradient(135deg, #ea580c 0%, #dc2626 50%, #f97316 100%);
+                background: linear-gradient(135deg, #00A0E3 0%, #0085bd 50%, #33b3e9 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
             
             .gradient-text-blue {
-                background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+                background: linear-gradient(135deg, #00A0E3 0%, #0085bd 50%, #0077a8 100%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
@@ -50,11 +84,11 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             
             /* Softer Hero Gradients */
             .hero-gradient-warm {
-                background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 25%, #fed7aa 50%, #fdba74 75%, #fb923c 100%);
+                background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 25%, #bae6fd 50%, #7dd3fc 75%, #00A0E3 100%);
             }
             
             .hero-gradient-cool {
-                background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 25%, #bfdbfe 50%, #93c5fd 75%, #60a5fa 100%);
+                background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 25%, #bae6fd 50%, #7dd3fc 75%, #38bdf8 100%);
             }
             
             /* Better Card Shadows */
@@ -114,13 +148,13 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             
             /* Badge/Tag Styles */
             .badge-glow {
-                box-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+                box-shadow: 0 0 20px rgba(0, 160, 227, 0.5);
                 animation: glow 2s ease-in-out infinite;
             }
             
             @keyframes glow {
-                0%, 100% { box-shadow: 0 0 20px rgba(251, 146, 60, 0.5); }
-                50% { box-shadow: 0 0 30px rgba(251, 146, 60, 0.8); }
+                0%, 100% { box-shadow: 0 0 20px rgba(0, 160, 227, 0.5); }
+                50% { box-shadow: 0 0 30px rgba(0, 160, 227, 0.8); }
             }
             
             /* Smooth Transitions */
@@ -267,10 +301,9 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <a href="/" class="flex items-center space-x-3">
-                        <img src="https://www.snsgroups.com/sns.png" alt="SNS Academy Logo" class="h-16 w-auto">
+                        <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png" alt="SNS Allied Health Science Logo" class="h-16 w-auto">
                         <div>
-                            <h1 class="text-xl font-bold text-gray-900">SNS Academy</h1>
-                            <p class="text-xs text-gray-500">Design Thinking School</p>
+                            <h1 class="text-xl font-bold text-gray-900 leading-tight">SNS College of <br/> Allied Health Sciences</h1>
                         </div>
                     </a>
                     
@@ -283,13 +316,13 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                                 Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
-                                <a href="/academics/pre-primary" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Pre-Primary (Pre-KG, LKG, UKG)</a>
-                                <a href="/academics/primary" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Primary (Grades 1-5)</a>
-                                <a href="/academics/middle" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Middle School (Grades 6-8)</a>
-                                <a href="/academics/secondary" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Secondary & Senior Secondary (Grades 9-12)</a>
+                                <a href="/courses/cardiac-technology" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Cardiac Technology</a>
+                                <a href="/courses/physician-assistant" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Physician Assistant</a>
+                                <a href="/courses/radiography" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Radiography & Imaging</a>
+                                <a href="/courses/operation-theatre" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">OT & Anesthesia Technology</a>
                                 <div class="border-t my-2"></div>
-                                <a href="/stanford-pathway" class="block px-4 py-2 hover:bg-orange-50 text-gray-700 font-semibold">
-                                    <i class="fas fa-university text-orange-600 mr-2"></i>Pathway to Stanford
+                                <a href="/courses" class="block px-4 py-2 hover:bg-orange-50 text-gray-700 font-semibold">
+                                    <i class="fas fa-list text-orange-600 mr-2"></i>View All Courses
                                 </a>
                             </div>
                         </div>
@@ -417,16 +450,13 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 <div class="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
                         <div class="flex items-center space-x-3 mb-4">
-                            <img src="https://www.snsgroups.com/sns.png" alt="SNS Academy Logo" class="h-12 w-auto bg-white rounded p-1">
+                            <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png" alt="SNS Allied Health Science Logo" class="h-12 w-auto bg-white rounded p-1">
                             <div>
-                                <h3 class="text-white font-bold">SNS Academy</h3>
-                                <p class="text-xs">Design Thinking School</p>
+                                <h3 class="text-white font-bold leading-tight">SNS College of Allied Health Sciences</h3>
                             </div>
                         </div>
                         <p class="text-sm leading-relaxed">
-                            CBSE Affiliation: 1930610<br>
-                            Established: 2014<br>
-                            Coimbatore, Tamil Nadu
+                            SNS Kalvi Nagar, Sathy Main Road (NH-209), Kurumbapalayam, Saravanampatti Post, Coimbatore - 641 035.
                         </p>
                     </div>
                     
@@ -463,10 +493,10 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                     <div>
                         <h4 class="text-white font-bold mb-4">Connect</h4>
                         <ul class="space-y-2 text-sm mb-4">
-                            <li><i class="fas fa-map-marker-alt mr-2"></i>SNS Academy,<br />Thudiyalur - Saravanampatti Road,<br />Vellakinar Post,<br />Coimbatore - 641029.</li>
-                            <li><a href="tel:+919629937861" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Admission: +91 96299 37861</a></li>
-                            <li><a href="tel:+917530093730" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Landline: +91 75300 93730</a></li>
-                            <li><a href="mailto:info@snsacademy.org" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i>info@snsacademy.org</a></li>
+                            <li><i class="fas fa-map-marker-alt mr-2"></i>SNS Kalvi Nagar, Sathy Main Road (NH-209), Coimbatore - 641 035.</li>
+                            <li><a href="tel:+919940956789" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Admission: +91 99409 56789</a></li>
+                            <li><a href="tel:+917550316701" class="hover:text-white transition"><i class="fas fa-phone mr-2"></i>Office: +91 75503 16701</a></li>
+                            <li><a href="mailto:office@snscahs.org" class="hover:text-white transition"><i class="fas fa-envelope mr-2"></i>office@snscahs.org</a></li>
                             <li><a href="mailto:job@snsgroups.com" class="hover:text-white transition"><i class="fas fa-briefcase mr-2"></i>Career: job@snsgroups.com</a></li>
                         </ul>
                         <div class="flex space-x-3">
@@ -487,7 +517,7 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 </div>
                 
                 <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                    <p>&copy; 2026 SNS Academy. All rights reserved.</p>
+                    <p>&copy; 2026 SNS College of Allied Health Sciences. All rights reserved.</p>
                     <p class="mt-2 text-orange-400 font-semibold">Redesigning Common Minds | We are Design Thinkers</p>
                     <p class="mt-1 text-xs">SNS Core Value: Sincerity, Nobility, Service</p>
                     <p class="mt-3 text-orange-400 font-bold"><i class="fas fa-headset mr-2"></i>Helpline: 95644 23456</p>
@@ -516,12 +546,12 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
             });
         </script>
         <!-- Instagram Floating Icon -->
-        <a href="https://www.instagram.com/snsacademy" class="instagram-float" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.instagram.com/snsinstitutions" class="instagram-float" target="_blank" rel="noopener noreferrer"
             title="Follow us on Instagram">
             <i class="fab fa-instagram"></i>
         </a>
         <!-- WhatsApp Floating Icon -->
-        <a href="https://wa.me/919629937861" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        <a href="https://wa.me/919940956789" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
             title="Chat with us on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>

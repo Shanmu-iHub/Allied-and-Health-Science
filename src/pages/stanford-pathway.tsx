@@ -3,8 +3,8 @@ import { PageHeader } from '../components/page-header'
 export const StanfordPathwayPage = () => {
     return `
     ${PageHeader(
-        'Your Pathway to Stanford', 
-        'We equip students with our patented GenAI-powered Design Thinking framework and the mindset to excel at elite universities worldwide', 
+        'Your Pathway to Stanford',
+        'We equip students with our patented GenAI-powered Design Thinking framework and the mindset to excel at elite universities worldwide',
         '/static/images/stanford_workshop.jpg',
         'Stanford Pathway'
     )}
@@ -73,7 +73,7 @@ export const StanfordPathwayPage = () => {
                 <span class="text-orange-600 font-bold tracking-wider uppercase text-sm mb-2 block">The Roadmap</span>
                 <h2 class="text-4xl font-bold text-gray-900 mb-6">Your Journey to Excellence</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    A structured 12-year journey from Nursery to Grade XII, building the foundation for elite university admission.
+                    A structured 4-year undergraduate journey, building the foundation for global clinical excellence and research.
                 </p>
             </div>
 
@@ -84,10 +84,10 @@ export const StanfordPathwayPage = () => {
                     <div class="grid md:grid-cols-12 gap-8 relative z-10">
                         <div class="md:col-span-4">
                             <div class="inline-block bg-orange-100 text-orange-700 px-4 py-1 rounded-full text-sm font-bold mb-4">Stage 1</div>
-                            <h3 class="text-3xl font-bold text-gray-900 mb-2">Foundation Stage</h3>
-                            <p class="text-lg text-gray-500 font-medium mb-6">Nursery - Grade 5</p>
+                            <h3 class="text-3xl font-bold text-gray-900 mb-2">Immersion Stage</h3>
+                            <p class="text-lg text-gray-500 font-medium mb-6">Year 1 - Year 2</p>
                             <p class="text-gray-600 leading-relaxed">
-                                Sparking curiosity and wonder through play-based discovery and initial project-based learning.
+                                Diving deep into clinical fundamentals and design thinking applications in healthcare systems.
                             </p>
                         </div>
                         <div class="md:col-span-8 grid sm:grid-cols-2 gap-8 border-t md:border-t-0 md:border-l border-gray-100 pt-8 md:pt-0 md:pl-8">
@@ -117,10 +117,10 @@ export const StanfordPathwayPage = () => {
                      <div class="grid md:grid-cols-12 gap-8 relative z-10">
                         <div class="md:col-span-4">
                             <div class="inline-block bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-bold mb-4">Stage 2</div>
-                            <h3 class="text-3xl font-bold text-gray-900 mb-2">Building Stage</h3>
-                            <p class="text-lg text-gray-500 font-medium mb-6">Grades 6 - 8</p>
+                            <h3 class="text-3xl font-bold text-gray-900 mb-2">Specialization Stage</h3>
+                            <p class="text-lg text-gray-500 font-medium mb-6">Year 3</p>
                             <p class="text-gray-600 leading-relaxed">
-                                Mastering the frameworks of innovation and applying critical thinking to real-world challenges.
+                                Mastering advanced clinical procedures and leading innovation projects to solve complex medical challenges.
                             </p>
                         </div>
                         <div class="md:col-span-8 grid sm:grid-cols-2 gap-8 border-t md:border-t-0 md:border-l border-gray-100 pt-8 md:pt-0 md:pl-8">
@@ -150,10 +150,10 @@ export const StanfordPathwayPage = () => {
                      <div class="grid md:grid-cols-12 gap-8 relative z-10">
                         <div class="md:col-span-4">
                             <div class="inline-block bg-red-100 text-red-700 px-4 py-1 rounded-full text-sm font-bold mb-4">Stage 3</div>
-                            <h3 class="text-3xl font-bold text-gray-900 mb-2">Excellence Stage</h3>
-                            <p class="text-lg text-gray-500 font-medium mb-6">Grades 9 - 12</p>
+                            <h3 class="text-3xl font-bold text-gray-900 mb-2">Leadership Stage</h3>
+                            <p class="text-lg text-gray-500 font-medium mb-6">Year 4 (Internship)</p>
                             <p class="text-gray-600 leading-relaxed">
-                                Accelerating towards global success with advanced research, startups, and elite university preparation.
+                                Demonstrating clinical leadership, finalizing patents, and launching healthcare innovations on a global scale.
                             </p>
                         </div>
                         <div class="md:col-span-8 grid sm:grid-cols-2 gap-8 border-t md:border-t-0 md:border-l border-gray-100 pt-8 md:pt-0 md:pl-8">
@@ -196,8 +196,8 @@ export const StanfordPathwayPage = () => {
                         <i class="fas fa-graduation-cap text-3xl text-red-600"></i>
                     </div>
                     <div class="text-4xl font-bold text-gray-900 mb-2">95%+</div>
-                    <p class="text-sm font-bold text-red-600 uppercase tracking-wider mb-2">Academic Excellence</p>
-                    <p class="text-gray-500 text-sm">Target Score for Board Exams</p>
+                    <p class="text-sm font-bold text-red-600 uppercase tracking-wider mb-2">Clinical Excellence</p>
+                    <p class="text-gray-500 text-sm">Target Proficiency in Diagnostics</p>
                 </div>
 
                 <div class="p-8 rounded-2xl bg-gray-50 hover:bg-white border border-gray-100 hover:shadow-xl transition duration-300 group text-center">
@@ -289,7 +289,7 @@ export const StanfordPathwayPage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">Begin Your Stanford Pathway Today</h2>
             <p class="text-xl lg:text-2xl mb-12 text-gray-600 font-light max-w-2xl mx-auto">
-                Join India's first Design Thinking CBSE school and get trained by industry experts to achieve your global dreams.
+                Join India's first Design Thinking Allied Health Sciences college and get trained by industry experts to achieve your professional dreams.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
                 <a href="/admissions" class="inline-flex items-center justify-center bg-orange-600 text-white hover:bg-orange-700 px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1">

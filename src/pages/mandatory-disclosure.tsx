@@ -4,7 +4,7 @@ export const MandatoryDisclosurePage = () => {
     return `
     ${PageHeader(
         'Mandatory Public Disclosure',
-        'APPENDIX - IX | As per CBSE Guidelines',
+        'Institutional Details & Regulatory Compliance',
         '/static/images/hero.png',
         'Mandatory Disclosure'
     )}
@@ -26,8 +26,8 @@ export const MandatoryDisclosurePage = () => {
                     <tbody>
                         <tr class="hover:bg-gray-50">
                             <td class="border border-gray-300 px-4 py-3">1</td>
-                            <td class="border border-gray-300 px-4 py-3 font-semibold">NAME OF THE SCHOOL</td>
-                            <td class="border border-gray-300 px-4 py-3">SNS ACADEMY</td>
+                            <td class="border border-gray-300 px-4 py-3 font-semibold">NAME OF THE INSTITUTION</td>
+                            <td class="border border-gray-300 px-4 py-3">SNS COLLEGE OF ALLIED HEALTH SCIENCES</td>
                         </tr>
                         <tr class="hover:bg-gray-50">
                             <td class="border border-gray-300 px-4 py-3">2</td>
@@ -55,9 +55,9 @@ export const MandatoryDisclosurePage = () => {
                             <td class="border border-gray-300 px-4 py-3">M.Sc, M.Ed, M.Phil</td>
                         </tr>
                         <tr class="hover:bg-gray-50">
-                            <td class="border border-gray-300 px-4 py-3">7</td>
-                            <td class="border border-gray-300 px-4 py-3 font-semibold">SCHOOL EMAIL ID</td>
-                            <td class="border border-gray-300 px-4 py-3"><a href="mailto:office@snsacademy.org" class="text-orange-600 hover:underline">office@snsacademy.org</a></td>
+                            <td class="border border-gray-300 px-4 py-3">5</td>
+                            <td class="border border-gray-300 px-4 py-3 font-semibold">ADMINISTRATIVE OFFICE EMAIL ID</td>
+                            <td class="border border-gray-300 px-4 py-3"><a href="mailto:office@snscahs.org" class="text-orange-600 hover:underline">office@snscahs.org</a></td>
                         </tr>
                         <tr class="hover:bg-gray-50">
                             <td class="border border-gray-300 px-4 py-3">8</td>

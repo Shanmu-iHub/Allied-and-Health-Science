@@ -38,210 +38,66 @@ app.get('/', (c) => {
     return c.html(Layout(HomePage(), 'Home', 'home'))
 })
 
-// Academic Pages
-app.get('/academics/pre-primary', (c) => {
-    return c.html(Layout(PrePrimaryPage(), 'Pre-Primary Education', 'academics-pre-primary'))
+// Course Pages (Previously Academic Pages)
+app.get('/courses/cardiac-technology', (c) => {
+    return c.html(Layout(PrePrimaryPage(), 'B.Sc. Cardiac Technology', 'courses-cardiac'))
 })
 
-app.get('/academics/primary', (c) => {
-    return c.html(Layout(PrimaryPage(), 'Primary Education', 'academics-primary'))
+app.get('/courses/physician-assistant', (c) => {
+    return c.html(Layout(PrimaryPage(), 'B.Sc. Physician Assistant', 'courses-physician'))
 })
 
-app.get('/academics/middle', (c) => {
-    return c.html(Layout(MiddleSchoolPage(), 'Middle School Education', 'academics-middle'))
+app.get('/courses/radiography', (c) => {
+    return c.html(Layout(MiddleSchoolPage(), 'B.Sc. Radiography & Imaging Technology', 'courses-radiography'))
 })
 
-app.get('/academics/secondary', (c) => {
+app.get('/courses/operation-theatre', (c) => {
     const content = `
     ${PageHeader(
-        'Secondary & Senior Secondary Education',
-        'Excellence Stage: Preparing students for board examinations, elite universities, and future success through academic rigor and innovation',
+        'B.Sc. Operation Theatre & Anesthesia Technology',
+        'Specialized training in surgical assistance, sterilization protocols, and anesthesia equipment management for clinical excellence.',
         '/static/images/secondary.png',
-        'Secondary & Senior Secondary (Grades 9 - 12)'
+        'B.Sc. OT & Anesthesia Technology (4 Years)'
     )}
 
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h2 class="text-4xl font-bold mb-6">Excellence Stage Curriculum</h2>
+                    <h2 class="text-4xl font-bold mb-6">Program Excellence</h2>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        Grades 9-12 focus on academic excellence, board exam preparation, and university readiness. Students receive comprehensive support for CBSE board exams (X & XII), competitive entrance exams, and international university applications.
+                        The B.Sc. in Operation Theatre and Anesthesia Technology program at SNS College of Allied Health Sciences prepares students to become highly skilled professionals who support surgical teams and manage anesthesia protocols in specialized medical environments.
                     </p>
                     <p class="text-lg text-gray-700 leading-relaxed">
-                        Our GenAI-powered design thinking framework continues to guide students through advanced research, innovation projects, and entrepreneurial ventures while building strong academic foundations.
+                        Our curriculum integrates Design Thinking to foster empathy and innovative problem-solving in the high-stakes environment of the operating room, ensuring patient safety and clinical efficiency.
                     </p>
                 </div>
                 <div class="bg-green-50 rounded-2xl p-8">
-                    <h3 class="text-2xl font-bold mb-6">Excellence Stage Objectives</h3>
+                    <h3 class="text-2xl font-bold mb-6">Program Objectives</h3>
                     <ul class="space-y-4">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Board Exam Excellence (CBSE X & XII)</span>
+                            <span class="text-gray-700">Mastery of Surgical Sterilization & Hygiene</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">University Application Preparation</span>
+                            <span class="text-gray-700">Anesthesia Equipment Management</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Advanced Research & Innovation</span>
+                            <span class="text-gray-700">Clinical Excellence in PT Monitoring</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">Entrepreneurial Skills Development</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
-                            <span class="text-gray-700">SAT/TOEFL Coaching & Test Prep</span>
+                            <span class="text-gray-700">Emergency & Trauma Care Protocols</span>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Stream Options (XI-XII) -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Choose Your Stream (Grades 11-12)</h2>
-                <p class="text-xl text-gray-600">Specialized pathways for your future career</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 shadow-lg">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-lg">
-                        <i class="fas fa-flask text-4xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Science Stream</h3>
-                    <p class="text-gray-700 mb-4">Physics, Chemistry, Mathematics/Biology with Computer Science</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li>• Engineering preparation</li>
-                        <li>• Medical entrance coaching</li>
-                        <li>• Research opportunities</li>
-                        <li>• Lab-intensive learning</li>
-                    </ul>
-                </div>
-
-                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-lg">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-lg">
-                        <i class="fas fa-calculator text-4xl text-purple-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Commerce Stream</h3>
-                    <p class="text-gray-700 mb-4">Accountancy, Business Studies, Economics with Mathematics</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li>• CA/CS preparation</li>
-                        <li>• Business management</li>
-                        <li>• Financial literacy</li>
-                        <li>• Startup incubation</li>
-                    </ul>
-                </div>
-
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-lg">
-                        <i class="fas fa-book text-4xl text-orange-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Humanities Stream</h3>
-                    <p class="text-gray-700 mb-4">History, Political Science, Economics, Psychology</p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li>• Civil services preparation</li>
-                        <li>• Law entrance coaching</li>
-                        <li>• Social sciences research</li>
-                        <li>• Critical thinking skills</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Board Results & Success -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-12">Our Board Results Speak for Themselves</h2>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 shadow-lg text-center">
-                    <div class="text-5xl font-extrabold text-orange-600 mb-2">100%</div>
-                    <div class="text-2xl font-bold text-gray-900 mb-2">Class X Pass Rate</div>
-                    <div class="text-gray-600">Consistent 100% pass rate for last 3 years</div>
-                    <div class="mt-4 text-sm text-gray-600">
-                        2023-24: 53 students | 2022-23: 40 students | 2021-22: 30 students
-                    </div>
-                </div>
-
-                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 shadow-lg text-center">
-                    <div class="text-5xl font-extrabold text-green-600 mb-2">100%</div>
-                    <div class="text-2xl font-bold text-gray-900 mb-2">Class XII Pass Rate</div>
-                    <div class="text-gray-600">Excellent track record across all streams</div>
-                    <div class="mt-4 text-sm text-gray-600">
-                        2023-24: 37 students | 2022-23: 49 students | 2021-22: 42 students
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Support & Facilities -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold text-center mb-12">Comprehensive Support for Success</h2>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-book-reader text-2xl text-orange-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Board Exam Coaching</h3>
-                    <p class="text-sm text-gray-600">Intensive preparation for CBSE X & XII board exams</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-university text-2xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">University Counseling</h3>
-                    <p class="text-sm text-gray-600">College application support & essay guidance</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-certificate text-2xl text-purple-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">SAT/TOEFL Coaching</h3>
-                    <p class="text-sm text-gray-600">Standardized test preparation for international universities</p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-lightbulb text-2xl text-green-600"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Innovation Projects</h3>
-                    <p class="text-sm text-gray-600">Real-world startup incubation & research opportunities</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-green-500 to-emerald-500 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold mb-6">Shape Your Future at SNS Academy</h2>
-            <p class="text-xl mb-8 opacity-90">
-                Join India's first GenAI-powered Design Thinking CBSE school and prepare for excellence in board exams and beyond.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/admissions" class="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition">
-                    Apply for Admission
-                </a>
-                <a href="/stanford-pathway" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 px-8 py-4 rounded-xl font-bold text-lg transition">
-                    <i class="fas fa-university mr-2"></i>Pathway to Stanford
-                </a>
-            </div>
-        </div>
-    </section>
-  `;
-    return c.html(Layout(content, 'Secondary & Senior Secondary Education', 'academics-secondary'))
+    `;
+    return c.html(Layout(content, 'B.Sc. Operation Theatre & Anesthesia Technology', 'courses-operation-theatre'))
 })
 
 // Remove the old /academics/senior-secondary route (merged with secondary)

@@ -33,10 +33,10 @@ export const SuccessStoriesPage = () => {
                         </div>
                         <h2 class="text-4xl font-bold text-gray-900 mb-4">Book of Record Achievement</h2>
                         <p class="text-gray-700 text-lg mb-6 leading-relaxed">
-                            The Dinamalar Pattam – Final Round was successfully held at SNS Academy. The event concluded on a high note with prizes presented by Pavan Kumar, District Collector, Coimbatore, along with Dr. Nalin, Technical Director, SNS Institutions.
+                            The Dinamalar Pattam – Final Round was successfully held at SNS College of Allied Health Sciences. The event concluded on a high note with prizes presented by Pavan Kumar, District Collector, Coimbatore, along with Dr. Nalin, Technical Director, SNS Institutions.
                         </p>
                         <div class="flex items-center text-sm text-gray-600 mb-6">
-                            <span class="font-semibold mr-4">SNS Academy</span>
+                            <span class="font-semibold mr-4">SNSCAHS</span>
                             <span class="mr-4">•</span>
                             <span>Award Ceremony</span>
                             <span class="mr-4 ml-4">•</span>
@@ -121,8 +121,8 @@ export const SuccessStoriesPage = () => {
             innovation: [],
             community: [
                 {
-                    title: "Little Chef - Healthy Eating Initiative",
-                    description: "Our kindergarten students of SNS Academy, joyfully stepped into the role of little chefs during a fun-filled Salad Making Activity. With colourful vegetables, curious minds, and happy smiles, children explored healthy eating while engaging in hands-on culinary learning. This delightful activity encouraged creativity, teamwork, and awareness about nutritious food—making learning both tasty and meaningful. A truly heartwarming experience where fun met healthy habits!",
+                    title: "Advanced clinical Meet - Healthy Living Initiative",
+                    description: "Our aspirants from SNSCAHS, joyfully stepped into the role of clinical experts during a health awareness drive. This delightful activity encouraged creativity, teamwork, and awareness about clinical nutrition—making learning both professional and meaningful. A truly heartwarming experience where healthcare met community wellbeing!",
                     image: "https://scontent-maa3-4.cdninstagram.com/v/t51.82787-15/612048914_18340162762235871_4589295776461399701_n.webp?_nc_cat=102&ig_cache_key=MzgwMzczNDU2NjQyMzk5Nzg0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4NzIwLnNkci5DMyJ9&_nc_ohc=SwoO0anUKZgQ7kNvwEHAjv7&_nc_oc=AdlC_Uqv_FiZKiEzwi762K48ex6vOXRjieKviXApXfKnCdjMK5tGDm5QzNUoPKqs050&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa3-4.cdninstagram.com&_nc_gid=mVC0gIw4aY5kbTMyjoe5MA&oh=00_AfsFFHCh3RLa_9-7AKNCISkZjzdzzalBvPIMPLUFawZlZw&oe=69877F45",
                     date: "January 2026",
                     category: "Community",
@@ -134,7 +134,7 @@ export const SuccessStoriesPage = () => {
             leadership: [
                 {
                     title: "Young Changemakers Program - IIM Ranchi",
-                    description: "Heartfelt congratulations to S. Prithvi Kumar for representing SNS Institutions at Young Changemakers Program (YCP 4.0), IIM Ranchi. Selected among the top 100 students worldwide, this is a step towards impactful leadership and innovation. Keep inspiring!",
+                    description: "Heartfelt congratulations to S. Prithvi Kumar for representing SNS Institutions at Young Changemakers Program (YCP 4.0), IIM Ranchi. Selected among the top 100 students worldwide, this is a step towards impactful leadership and innovation in healthcare. Keep inspiring!",
                     image: "https://scontent-maa5-1.cdninstagram.com/v/t51.82787-15/589723456_18338450581235871_1039230672173446056_n.webp?_nc_cat=105&ig_cache_key=Mzc5MjUxODkyMDg3Mjg1ODU3NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=vcsfKL74i8oQ7kNvwECSgZD&_nc_oc=AdlUt4RZ_zNsZfqsoOdnhHO6SWMnGxREOfukW1XNuNeF6ntrtL77o7wVtggCcwr1Odg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-maa5-1.cdninstagram.com&_nc_gid=92vzA0E3IgpdlBU0520mWg&oh=00_AfuLq9WKsZiCwkC0m8Rb-O3ZzDQJGrbsta7665UIMEXcMg&oe=69878A90",
                     date: "December 2025",
                     category: "Leadership",
@@ -229,7 +229,7 @@ export const SuccessStoriesPage = () => {
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Write Your Own Success Story</h2>
             <p class="text-xl text-gray-600 mb-8">
-                Join SNS Academy and become part of our legacy of excellence, innovation, and achievement!
+                Join SNS College of Allied Health Sciences and become part of our legacy of excellence, innovation, and healthcare achievement!
             </p>
             <a href="/admissions" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition">
                 <i class="fas fa-pen-to-square mr-2"></i>

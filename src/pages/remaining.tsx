@@ -5,7 +5,7 @@ export const InnovationPage = () => {
     return `
     ${PageHeader(
         'SNS Innovation Hub',
-        'Powered by India\'s First Patented GenAI Design Thinking Framework | India\'s Y-Combinator for Schools',
+        'Redesigning Health Science Education through Design Thinking and Clinical Innovation',
         '/static/images/pillar_industry.jpg',
         'Innovation Hub'
     )}
@@ -16,10 +16,10 @@ export const InnovationPage = () => {
                 <div>
                     <h2 class="text-4xl font-bold mb-6">About SNS iHub</h2>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                        SNS iHub is an initiative by SNS Institutions to foster startups by providing a prototyping space immersed in an ambience of creativity and our <strong class="text-orange-600">patented GenAI-powered Design Thinking framework</strong>.
+                        SNS iHub is our dedicated space for fostering innovation in healthcare. We combine medical expertise with our <strong>Design Thinking framework</strong> to solve complex clinical problems.
                     </p>
                     <p class="text-lg text-gray-700 leading-relaxed">
-                        The center helps identify societal/industrial needs and solve them using our AI-enhanced design thinking approach, mentored by experts from academia and industry.
+                        From developing assistive medical devices to optimizing hospital workflows, our students use the iHub to turn empathetic insights into tangible healthcare solutions.
                     </p>
                 </div>
                 <div class="bg-purple-50 rounded-2xl p-8">
@@ -388,8 +388,8 @@ export const InnovationPage = () => {
 export const AboutPage = () => {
     return `
     ${PageHeader(
-        'About SNS Academy',
-        'Redesigning Common Minds & Business Towards Excellence',
+        'About SNSCAHS',
+        'India\'s First Institute to Implement Design Thinking in Education',
         '/static/images/hero.png',
         'About Us'
     )}
@@ -412,13 +412,13 @@ export const AboutPage = () => {
                     <div class="mb-12">
                         <span class="text-orange-600 font-bold tracking-wider uppercase text-sm mb-2 block">Our Vision</span>
                         <h2 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900">
-                            Building an <span class="text-orange-600">Entrepreneurial Mindset</span>
+                            Pioneering <span class="text-orange-600">Allied Health Education</span>
                         </h2>
                         <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                            We believe in nurturing the next generation of innovators through our <strong>GenAI-Powered Design Thinking Framework (Patented)</strong>. Our approach goes beyond textbooks, embedding empathy and creativity into the core of learning.
+                            SNS College of Allied Health Sciences is dedicated to producing world-class healthcare professionals through our unique <strong>Design Thinking Framework</strong>. We prioritize clinical excellence, empathy-driven care, and innovative research.
                         </p>
                         <p class="text-lg text-gray-600 leading-relaxed">
-                            <strong>Sincerity, Nobility, and Service</strong> are not just our core values—they are the guiding principles that shape every student's character at SNS Academy.
+                            Affiliated to <strong>The Tamil Nadu Dr.MGR Medical University</strong>, we ensure our students are trained at the highest standards of medical education and ethics.
                         </p>
                     </div>
 
@@ -643,21 +643,21 @@ export const ContactPage = () => {
                             <i class="fas fa-map-marker-alt text-3xl text-orange-600 mr-4"></i>
                             <div>
                                 <h3 class="font-bold text-xl mb-2">Address</h3>
-                                <p class="text-gray-700">SNS Academy,<br>Thudiyalur - Saravanampatti Road,<br>Vellakinar Post,<br>Coimbatore - 641029.</p>
+                                <p class="text-gray-700">SNS College of Allied Health Sciences,<br>SNS Kalvi Nagar, Sathy Main Road (NH-209),<br>Vazhiyampalayam, Saravanampatti Post,<br>Coimbatore - 641 035.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-phone text-3xl text-orange-600 mr-4"></i>
                             <div>
                                 <h3 class="font-bold text-xl mb-2">Phone</h3>
-                                <p class="text-gray-700">Admission: +91 96299 37861<br>Landline: +91 75300 93730</p>
+                                <p class="text-gray-700">Admission: +91 99409 56789<br>Office: +91 75503 16701</p>
                             </div>
                         </div>
                         <div class="flex items-start">
                             <i class="fas fa-envelope text-3xl text-green-600 mr-4"></i>
                             <div>
                                 <h3 class="font-bold text-xl mb-2">Email</h3>
-                                <p class="text-gray-700">General: info@snsacademy.org<br>Career: job@snsgroups.com</p>
+                                <p class="text-gray-700">General: office@snscahs.org<br>Admissions: snsadmission@snsgroups.com</p>
                             </div>
                         </div>
                         <div class="flex items-start">

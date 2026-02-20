@@ -6,7 +6,7 @@ export const HomePage = () => {
     <section class="relative text-white py-24 lg:py-32 overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="/static/images/hero.png" alt="SNS Academy Campus" class="w-full h-full object-cover">
+            <img src="/static/images/hero.png" alt="SNSCAHS Campus" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-r from-black/10 via-black/10 to-transparent"></div>
         </div>
         
@@ -15,24 +15,24 @@ export const HomePage = () => {
                 <div>
                     <div class="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6">
                         <i class="fas fa-trophy text-yellow-400 mr-2"></i>
-                        <span class="text-sm font-semibold tracking-wide">India's First GenAI-Powered Design Thinking CBSE School (Patented)</span>
+                        <span class="text-sm font-semibold tracking-wide">First Indian Institute to Implement Design Thinking in Education</span>
                     </div>
                     
                     <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight font-display">
-                        <a href="/stanford-pathway" class="hover:text-orange-400 transition duration-300">
-                            Your Pathway to <br/>
-                            <span class="text-orange-500">Stanford</span>
+                        <a href="/about" class="hover:text-orange-400 transition duration-300">
+                            SNS College of <br/>
+                            <span class="text-orange-500 text-4xl lg:text-5xl uppercase block mt-2">Allied Health Science</span>
                         </a>
                     </h1>
                     
                     <div class="h-1 w-24 bg-orange-500 mb-8 rounded-full"></div>
 
                     <p class="text-xl lg:text-2xl mb-6 text-gray-200 leading-relaxed max-w-xl">
-                        Trained by Stanford Alumni, our students learn world-class <strong class="text-white">Design Thinking Methodologies</strong> and innovation practices that open doors to elite universities worldwide.
+                        Affiliated to <strong class="text-white">The Tamil Nadu Dr.MGR Medical University, Chennai</strong>. Redesigning health science education through clinical excellence and innovation.
                     </p>
 
                     <p class="text-sm lg:text-base mb-8 text-gray-200 leading-relaxed max-w-xl">
-                        Transform your child into a confident learner and global leader at Coimbatore's most progressive CBSE school.
+                        Empowering future healthcare professionals with cutting-edge clinical training and a Design Thinking mindset at Coimbatore's premier health science institution.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 mb-10">
@@ -49,15 +49,15 @@ export const HomePage = () => {
                     <div class="flex flex-col sm:flex-row gap-4 text-xs text-gray-200">
                         <div class="inline-flex items-center">
                             <i class="fas fa-circle-check text-green-400 mr-2"></i>
-                            CBSE Affiliated
+                            Dr.MGR Medical University Affiliated
                         </div>
                         <div class="inline-flex items-center">
-                            <i class="fas fa-shield-halved text-green-400 mr-2"></i>
-                            Verified by CBSE
+                            <i class="fas fa-hospital text-green-400 mr-2"></i>
+                            Clinical Hospital Connect
                         </div>
                         <div class="inline-flex items-center">
                             <i class="fas fa-calendar text-green-400 mr-2"></i>
-                            Since 2014
+                            Innovative Learning
                         </div>
                     </div>
                 </div>
@@ -80,8 +80,8 @@ export const HomePage = () => {
                                 <div class="text-xs text-gray-200 mt-1">Extra Curricular</div>
                             </div>
                             <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
-                                <div class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">12+</div>
-                                <div class="text-xs text-gray-200 mt-1">Years of CBSE</div>
+                                <div class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">100%</div>
+                                <div class="text-xs text-gray-200 mt-1">Placement Support</div>
                             </div>
                         </div>
                     </div>
@@ -95,20 +95,20 @@ export const HomePage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center text-center divide-x divide-gray-100">
                 <div class="p-4">
-                    <div class="text-4xl font-bold text-gray-900 mb-2">2014</div>
-                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Established</div>
+                    <div class="text-4xl font-bold text-gray-900 mb-2">100%</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Clinical Training</div>
                 </div>
                 <div class="p-4">
-                    <div class="text-4xl font-bold text-gray-900 mb-2">1000+</div>
-                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Happy Students</div>
+                    <div class="text-4xl font-bold text-gray-900 mb-2">5+</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Specialized B.Sc. Programs</div>
                 </div>
                 <div class="p-4">
-                    <div class="text-4xl font-bold text-gray-900 mb-2">A+</div>
-                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Campus Rating</div>
+                    <div class="text-4xl font-bold text-gray-900 mb-2">MoUs</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">with Leading Hospitals</div>
                 </div>
                 <div class="p-4">
                     <div class="text-4xl font-bold text-gray-900 mb-2">SNS iHub</div>
-                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Innovation Center</div>
+                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Tech & Innovation Lab</div>
                 </div>
             </div>
         </div>
@@ -118,9 +118,9 @@ export const HomePage = () => {
     <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-orange-600">Why Parents Choose SNS Academy</h2>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-orange-600">Why Aspirants Choose SNS Allied Health Science</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    We don't just teach subjects—we redesign common minds through design thinking, preparing your child for tomorrow's challenges.
+                    We don't just teach subjects—we redesign professional minds through design thinking, preparing you for clinical challenges.
                 </p>
             </div>
             
@@ -130,9 +130,9 @@ export const HomePage = () => {
                     <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i class="fas fa-lightbulb text-3xl text-orange-600"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Design Thinking Education</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">India's 1st Design Thinking Institute</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        India's first school with <strong>GenAI-Powered Design Thinking Framework (Patented)</strong>. Built on <strong>Empathy</strong>, every child learns to solve problems creatively using AI-enhanced methodologies from an early age.
+                        Redesigning health science education through <strong>Empathy</strong>. Our students learn to identify clinical problems and develop human-centric solutions through advanced healthcare technologies.
                     </p>
                 </div>
                 
@@ -141,9 +141,9 @@ export const HomePage = () => {
                     <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i class="fas fa-users text-3xl text-blue-600"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">3P Culture Framework</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Clinical Hospital Connect</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        <strong>Purpose, Process, People</strong>—our holistic approach ensures every child develops academically, socially, emotionally, and ethically.
+                        Collaborative partnerships with premier multi-specialty hospitals for intensive hands-on clinical training, ensuring graduates are workforce-ready.
                     </p>
                 </div>
                 
@@ -152,9 +152,9 @@ export const HomePage = () => {
                     <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
                         <i class="fas fa-hand-holding-heart text-3xl text-green-600"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">10:1 Personalized Care</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Expert Medical Faculty</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Ultra-low student-teacher ratio ensures every child receives individual attention. 60% of our faculty have 10+ years of experience.
+                        Learn from experienced healthcare professionals and researchers dedicated to nurturing the next generation of allied health specialists.
                     </p>
                 </div>
                 
@@ -199,83 +199,71 @@ export const HomePage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                 <span class="text-orange-600">Academic Excellence at Every Level</span>
+                 <span class="text-orange-600">Excellence in Health Science Education</span>
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    CBSE curriculum enhanced with design thinking, experiential learning, and innovation from Nursery to Grade XII.
+                    World-class curriculum enhanced with design thinking, clinical excellence, and innovation in health science education.
                 </p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Program 1 -->
-                <a href="/academics/pre-primary" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                <!-- Course 1 -->
+                <a href="/courses/cardiac-technology" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-56 overflow-hidden relative">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="/static/images/pre-primary.png" alt="Pre-Primary" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Cardiac-Technology.jpg" alt="Cardiac Technology" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Pre-Primary</h3>
-                        <p class="text-orange-600 font-semibold text-sm mb-3">Nursery - UKG</p>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Cardiac Technology</h3>
+                        <p class="text-orange-600 font-semibold text-sm mb-3">4-Year Degree Program</p>
                         <p class="text-gray-600 text-sm line-clamp-3">
-                            Play-based learning with early literacy, numeracy, and social development.
+                            Specialized training in invasive and non-invasive cardiovascular procedures and diagnosis.
                         </p>
-                        <div class="mt-4 text-orange-600 font-bold text-sm flex items-center">
-                            Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
-                        </div>
                     </div>
                 </a>
                 
-                <!-- Program 2 -->
-                <a href="/academics/primary" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                <!-- Course 2 -->
+                <a href="/courses/physician-assistant" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-56 overflow-hidden relative">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="/static/images/primary.png" alt="Primary" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Physicia-Assistant.jpg" alt="Physician Assistant" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Primary</h3>
-                        <p class="text-blue-600 font-semibold text-sm mb-3">Grades 1 - 5</p>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Physician Assistant</h3>
+                        <p class="text-blue-600 font-semibold text-sm mb-3">4-Year Degree Program</p>
                         <p class="text-gray-600 text-sm line-clamp-3">
-                            Conceptual understanding, creativity, and skill development with hands-on learning.
+                            Comprehensive clinical practice training to support physicians in diverse medical environments.
                         </p>
-                        <div class="mt-4 text-blue-600 font-bold text-sm flex items-center">
-                            Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
-                        </div>
                     </div>
                 </a>
                 
-                <!-- Program 3 -->
-                <a href="/academics/middle" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                <!-- Course 3 -->
+                <a href="/courses/radiography" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-56 overflow-hidden relative">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="/static/images/middle.png" alt="Middle School" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Radiography-and-Imaging-Technology.jpg" alt="Radiography" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Middle School</h3>
-                        <p class="text-purple-600 font-semibold text-sm mb-3">Grades 6 - 8</p>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Radiography & Imaging</h3>
+                        <p class="text-purple-600 font-semibold text-sm mb-3">4-Year Degree Program</p>
                         <p class="text-gray-600 text-sm line-clamp-3">
-                            Critical thinking, problem-solving, and project-based collaborative learning.
+                            Training in medical imaging technologies including X-Ray, CT, and MRI for accurate diagnosis.
                         </p>
-                        <div class="mt-4 text-purple-600 font-bold text-sm flex items-center">
-                            Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
-                        </div>
                     </div>
                 </a>
                 
-                <!-- Program 4 -->
-                <a href="/academics/secondary" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                <!-- Course 4 -->
+                <a href="/courses/operation-theatre" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
                     <div class="h-56 overflow-hidden relative">
                         <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="/static/images/secondary.png" alt="Secondary" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+                        <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Operation-Theater-and-Anaesthesia-Technology.jpg" alt="OT & Anesthesia" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
                     </div>
                     <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Secondary</h3>
-                        <p class="text-green-600 font-semibold text-sm mb-3">Grades 9 - 12</p>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-1">OT & Anesthesia</h3>
+                        <p class="text-green-600 font-semibold text-sm mb-3">4-Year Degree Program</p>
                         <p class="text-gray-600 text-sm line-clamp-3">
-                            Board exam excellence with career pathways and university preparation.
+                            Specialized training in surgical assistance, sterilization, and anesthesia equipment management.
                         </p>
-                        <div class="mt-4 text-green-600 font-bold text-sm flex items-center">
-                            Explore <i class="fas fa-arrow-right ml-2 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"></i>
-                        </div>
                     </div>
                 </a>
             </div>
@@ -288,10 +276,10 @@ export const HomePage = () => {
     <section class="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-4xl lg:text-5xl font-bold mb-4">
-                Ready to Transform Your Child's Future?
+                Ready to Shape Your Medical Career?
             </h2>
             <p class="text-xl opacity-90 mb-8">
-                Admissions open for Academic Year 2026-27. Limited seats available.
+                Admissions open for Academic Year 2026-27. Secure your future in healthcare.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/admissions" class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-xl">
