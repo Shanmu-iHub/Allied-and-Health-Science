@@ -4,9 +4,9 @@ import { PageHeader } from '../components/page-header'
 export const TransportPage = () => {
     return `
     ${PageHeader(
-        'School Transport Services',
-        'Safe, comfortable, and punctual transportation for your child',
-        '/static/images/SNS_BUS.jpg',
+        'College Transport Services',
+        'Safe, comfortable, and punctual transportation for our students',
+        '/static/images/hero.png',
         'Transport'
     )}
 
@@ -14,7 +14,7 @@ export const TransportPage = () => {
     <section class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Why Parents Trust Our Transport</h2>
+                <h2 class="text-4xl font-bold mb-4">Why Aspirants Trust Our Transport</h2>
                 <p class="text-xl text-gray-600">Fleet of 20 buses covering major areas of Coimbatore</p>
             </div>
             
@@ -158,9 +158,9 @@ export const TransportPage = () => {
                 <h3 class="text-3xl font-bold mb-4">Not Sure If Your Area Is Covered?</h3>
                 <p class="text-xl mb-6">Contact our transport coordinator to check route availability for your specific location</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+914224390470" class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                    <a href="tel:+917550316701" class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                         <i class="fas fa-phone mr-2"></i>
-                        Call: +91 96299 37861
+                        Call: +91 75503 16701
                     </a>
                     <a href="/contact" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                         <i class="fas fa-envelope mr-2"></i>
@@ -224,7 +224,7 @@ export const TransportPage = () => {
             
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold mb-6 text-blue-600">For Parents</h3>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">General Guidelines</h3>
                     <ul class="space-y-4">
                         <li class="flex items-start">
                             <i class="fas fa-clock text-blue-600 mt-1 mr-3"></i>
@@ -233,9 +233,9 @@ export const TransportPage = () => {
                             </div>
                         </li>
                         <li class="flex items-start">
-                            <i class="fas fa-user-check text-blue-600 mt-1 mr-3"></i>
+                            <i class="fas fa-map-marked-alt text-blue-600 mt-1 mr-3"></i>
                             <div>
-                                <strong>Pick-up (Nursery-VII):</strong> Parents must receive child at bus stop
+                                <strong>Designated Stops:</strong> Boarding and deboarding only at authorized stops
                             </div>
                         </li>
                         <li class="flex items-start">
@@ -247,7 +247,7 @@ export const TransportPage = () => {
                         <li class="flex items-start">
                             <i class="fas fa-envelope text-blue-600 mt-1 mr-3"></i>
                             <div>
-                                <strong>Communication:</strong> All requests via official email only
+                                <strong>Communication:</strong> All requests via official office email only
                             </div>
                         </li>
                     </ul>
@@ -259,19 +259,19 @@ export const TransportPage = () => {
                         <li class="flex items-start">
                             <i class="fas fa-user-tie text-purple-600 mt-1 mr-3"></i>
                             <div>
-                                <strong>Uniform:</strong> Proper school uniform mandatory
+                                <strong>Uniform:</strong> Proper college uniform mandatory
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-id-badge text-purple-600 mt-1 mr-3"></i>
                             <div>
-                                <strong>ID Card:</strong> School ID with bus number required
+                                <strong>ID Card:</strong> College ID with bus number required
                             </div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-ban text-purple-600 mt-1 mr-3"></i>
                             <div>
-                                <strong>Prohibited:</strong> Eating, drinking, or games in bus
+                                <strong>Prohibited:</strong> Eating, drinking, or loud music in bus
                             </div>
                         </li>
                         <li class="flex items-start">
@@ -291,7 +291,7 @@ export const TransportPage = () => {
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-12 text-center">
                 <i class="fas fa-clock text-6xl text-blue-600 mb-6"></i>
-                <h2 class="text-4xl font-bold mb-4">School Timings</h2>
+                <h2 class="text-4xl font-bold mb-4">College Timings</h2>
                 <p class="text-xl text-gray-700 mb-6">
                     Buses are scheduled to ensure students arrive by <strong class="text-blue-600">8:15 AM</strong> daily
                 </p>
@@ -314,13 +314,13 @@ export const TransportPage = () => {
                 Contact our transport coordinator for route details, availability, and fees
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+914224390470" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                <a href="tel:+917550316701" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                     <i class="fas fa-phone mr-2"></i>
-                    +91 96299 37861
+                    +91 75503 16701
                 </a>
-                <a href="mailto:info@snsacademy.org" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
+                <a href="mailto:office@snscahs.org" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center justify-center">
                     <i class="fas fa-envelope mr-2"></i>
-                    info@snsacademy.org
+                    office@snscahs.org
                 </a>
             </div>
         </div>

@@ -1,7 +1,7 @@
 
 import { PageHeader } from '../components/page-header'
 
-export const PrePrimaryPage = () => {
+export const CardiacTechnologyPage = () => {
     return `
     ${PageHeader(
         'B.Sc. Cardiac Technology',
@@ -90,7 +90,7 @@ export const PrePrimaryPage = () => {
   `;
 };
 
-export const PrimaryPage = () => {
+export const PhysicianAssistantPage = () => {
     return `
     ${PageHeader(
         'B.Sc. Physician Assistant',
@@ -170,7 +170,7 @@ export const PrimaryPage = () => {
   `;
 }
 
-export const MiddleSchoolPage = () => {
+export const RadiographyPage = () => {
     return `
     ${PageHeader(
         'B.Sc. Radiography & Imaging Technology',

@@ -2,7 +2,7 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { Layout, PageHeader } from './components/layout'
 import { HomePage } from './pages/home'
-import { PrePrimaryPage, PrimaryPage, MiddleSchoolPage } from './pages/academics'
+import { CardiacTechnologyPage, PhysicianAssistantPage, RadiographyPage } from './pages/courses'
 import { FacilitiesPage } from './pages/facilities'
 import { InnovationPage, AboutPage, ContactPage, AdmissionsPage } from './pages/remaining'
 import { MandatoryDisclosurePage } from './pages/mandatory-disclosure'
@@ -40,15 +40,15 @@ app.get('/', (c) => {
 
 // Course Pages (Previously Academic Pages)
 app.get('/courses/cardiac-technology', (c) => {
-    return c.html(Layout(PrePrimaryPage(), 'B.Sc. Cardiac Technology', 'courses-cardiac'))
+    return c.html(Layout(CardiacTechnologyPage(), 'B.Sc. Cardiac Technology', 'courses-cardiac'))
 })
 
 app.get('/courses/physician-assistant', (c) => {
-    return c.html(Layout(PrimaryPage(), 'B.Sc. Physician Assistant', 'courses-physician'))
+    return c.html(Layout(PhysicianAssistantPage(), 'B.Sc. Physician Assistant', 'courses-physician'))
 })
 
 app.get('/courses/radiography', (c) => {
-    return c.html(Layout(MiddleSchoolPage(), 'B.Sc. Radiography & Imaging Technology', 'courses-radiography'))
+    return c.html(Layout(RadiographyPage(), 'B.Sc. Radiography & Imaging Technology', 'courses-radiography'))
 })
 
 app.get('/courses/operation-theatre', (c) => {
@@ -100,11 +100,7 @@ app.get('/courses/operation-theatre', (c) => {
     return c.html(Layout(content, 'B.Sc. Operation Theatre & Anesthesia Technology', 'courses-operation-theatre'))
 })
 
-// Remove the old /academics/senior-secondary route (merged with secondary)
-app.get('/academics/senior-secondary', (c) => {
-    // Redirect to the combined secondary page
-    return c.redirect('/academics/secondary', 301)
-})
+
 
 // Facilities Page
 app.get('/facilities', (c) => {
