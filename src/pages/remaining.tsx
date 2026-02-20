@@ -811,7 +811,7 @@ export const AdmissionsPage = () => {
     return `
     ${PageHeader(
         'Admissions 2026-27',
-        'Begin Your Child\'s Journey to Excellence',
+        'Begin Your Professional Healthcare Journey',
         '/static/images/hero.png',
         'Admissions'
     )}
@@ -826,7 +826,7 @@ export const AdmissionsPage = () => {
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">Register</h3>
-                        <p class="text-gray-700">Visit school on any working day between 9:00 AM to 5:00 PM and register for your child's admission.</p>
+                        <p class="text-gray-700">Visit campus on any working day between 9:00 AM to 5:00 PM and register for your admission.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -835,7 +835,7 @@ export const AdmissionsPage = () => {
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">Assessment</h3>
-                        <p class="text-gray-700">Written assessment in English, Mathematics, Language, and General Knowledge according to School's syllabi.</p>
+                        <p class="text-gray-700">Aptitude assessment in English, Basic Science, and General Knowledge according to University entrance standards.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -844,7 +844,7 @@ export const AdmissionsPage = () => {
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">Interview</h3>
-                        <p class="text-gray-700">Interview to determine alignment of parental views with school philosophy and interpret student scores.</p>
+                        <p class="text-gray-700">Detailed interview to determine alignment of aspirant views with clinical excellence and healthcare ethics.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
@@ -853,7 +853,7 @@ export const AdmissionsPage = () => {
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold mb-2">Selection</h3>
-                        <p class="text-gray-700">Results compiled on merit by Admissions Committee. Seats offered in order of merit.</p>
+                        <p class="text-gray-700">Results compiled on merit by the Admissions Committee. Seats offered in order of merit and clinical aptitude.</p>
                     </div>
                 </div>
             </div>

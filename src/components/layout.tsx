@@ -273,10 +273,10 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
     </head>
     <body class="antialiased bg-gray-50">
         
-        <!-- Hanging Tag 1: CBSE -->
+        <!-- Hanging Tag 1: Affiliation -->
         <div class="fixed top-[22%] right-0 z-50 swing">
             <div class="bg-gradient-to-br from-green-600 to-emerald-600 text-white px-4 py-6 rounded-l-2xl shadow-2xl">
-                <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">CBSE</span>
+                <span class="font-extrabold text-sm uppercase tracking-widest" style="writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 0.2em;">MGR UNIV</span>
             </div>
         </div>
         
@@ -310,10 +310,10 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                     <div class="hidden md:flex items-center space-x-6">
                         <a href="/" class="${activePage === 'home' ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium">Home</a>
                         
-                        <!-- Academics Dropdown -->
+                        <!-- Programs Dropdown -->
                         <div class="relative group">
-                            <button class="${activePage.startsWith('academics') || activePage === 'stanford-pathway' ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium flex items-center">
-                                Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                            <button class="${activePage.startsWith('courses') || activePage === 'stanford-pathway' ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium flex items-center">
+                                Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-64 mt-0 z-50">
                                 <a href="/courses/cardiac-technology" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Cardiac Technology</a>
@@ -321,9 +321,6 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                                 <a href="/courses/radiography" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Radiography & Imaging</a>
                                 <a href="/courses/operation-theatre" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">OT & Anesthesia Technology</a>
                                 <div class="border-t my-2"></div>
-                                <a href="/courses" class="block px-4 py-2 hover:bg-orange-50 text-gray-700 font-semibold">
-                                    <i class="fas fa-list text-orange-600 mr-2"></i>View All Courses
-                                </a>
                             </div>
                         </div>
                         
@@ -339,10 +336,10 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                             </div>
                         </div>
                         
-                        <!-- Beyond Academics Dropdown -->
+                        <!-- Beyond Programs Dropdown -->
                         <div class="relative group">
                             <button class="${['sports-clubs', 'innovation', 'events', 'success-stories'].includes(activePage) ? 'text-orange-600 font-bold' : 'text-gray-700 hover:text-orange-600'} font-medium flex items-center">
-                                Beyond Academics <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                                Beyond Programs <i class="fas fa-chevron-down ml-1 text-xs"></i>
                             </button>
                             <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg py-2 w-56 mt-0 z-50">
                                 <a href="/sports-clubs" class="block px-4 py-2 hover:bg-orange-50 text-gray-700">Sports & Clubs</a>
@@ -380,19 +377,19 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                 <div class="px-4 py-4 space-y-3">
                     <a href="/" class="block text-gray-700 hover:text-orange-600 font-medium py-2">Home</a>
                     
-                    <!-- Academics -->
+                    <!-- Programs -->
                     <div>
                         <button class="w-full text-left text-gray-700 hover:text-orange-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-academics').classList.toggle('hidden')">
-                            Academics <i class="fas fa-chevron-down"></i>
+                            Programs <i class="fas fa-chevron-down"></i>
                         </button>
                         <div id="mobile-academics" class="hidden pl-4 space-y-2 mt-2">
-                            <a href="/academics/pre-primary" class="block text-gray-600 hover:text-orange-600 py-1">Pre-Primary (Pre-KG, LKG, UKG)</a>
-                            <a href="/academics/primary" class="block text-gray-600 hover:text-orange-600 py-1">Primary (Grades 1-5)</a>
-                            <a href="/academics/middle" class="block text-gray-600 hover:text-orange-600 py-1">Middle School (Grades 6-8)</a>
-                            <a href="/academics/secondary" class="block text-gray-600 hover:text-orange-600 py-1">Secondary & Senior Secondary (Grades 9-12)</a>
+                            <a href="/courses/cardiac-technology" class="block text-gray-600 hover:text-orange-600 py-1">Cardiac Technology</a>
+                            <a href="/courses/physician-assistant" class="block text-gray-600 hover:text-orange-600 py-1">Physician Assistant</a>
+                            <a href="/courses/radiography" class="block text-gray-600 hover:text-orange-600 py-1">Radiography & Imaging</a>
+                            <a href="/courses/operation-theatre" class="block text-gray-600 hover:text-orange-600 py-1">OT & Anesthesia Technology</a>
                             <div class="border-t my-2"></div>
-                            <a href="/stanford-pathway" class="block text-gray-600 hover:text-orange-600 py-1 font-semibold">
-                                <i class="fas fa-university text-orange-600 mr-2"></i>Pathway to Stanford
+                            <a href="/courses" class="block text-gray-600 hover:text-orange-600 py-1 font-semibold">
+                                <i class="fas fa-list text-orange-600 mr-2"></i>View All Courses
                             </a>
                         </div>
                     </div>
@@ -409,10 +406,10 @@ export const Layout = (content: string, title: string, activePage: string = 'hom
                         </div>
                     </div>
                     
-                    <!-- Beyond Academics -->
+                    <!-- Beyond Programs -->
                     <div>
                         <button class="w-full text-left text-gray-700 hover:text-orange-600 font-medium py-2 flex justify-between items-center" onclick="document.getElementById('mobile-beyond').classList.toggle('hidden')">
-                            Beyond Academics <i class="fas fa-chevron-down"></i>
+                            Beyond Programs <i class="fas fa-chevron-down"></i>
                         </button>
                         <div id="mobile-beyond" class="hidden pl-4 space-y-2 mt-2">
                             <a href="/sports-clubs" class="block text-gray-600 hover:text-orange-600 py-1">Sports & Clubs</a>
