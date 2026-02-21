@@ -32,7 +32,7 @@ export default function Home() {
                             <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
                                 <Link to="/about" className="hover:text-orange-400 transition duration-300">
                                     SNS College of <br />
-                                    <span className="text-orange-500 text-4xl lg:text-5xl uppercase block mt-2">Allied Health Science</span>
+                                    <span className="text-orange-500 text-4xl lg:text-5xl uppercase block mt-2">Allied Health Sciences</span>
                                 </Link>
                             </h1>
                             <div className="h-1 w-24 bg-orange-500 mb-8 rounded-full"></div>
@@ -87,7 +87,7 @@ export default function Home() {
             <section className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-orange-600">Why Aspirants Choose SNS Allied Health Science</h2>
+                        <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-orange-600">Why Aspirants Choose SNS Allied Health Sciences</h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">We don't just teach subjects—we redesign professional minds through design thinking.</p>
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

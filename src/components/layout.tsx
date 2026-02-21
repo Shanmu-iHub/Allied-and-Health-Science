@@ -51,7 +51,7 @@ export default function Layout() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-20">
                         <Link to="/" className="flex items-center space-x-3">
-                            <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png" alt="SNS Allied Health Science Logo" className="h-16 w-auto" />
+                            <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png" alt="SNS Allied Health Sciences Logo" className="h-16 w-auto" />
                             <div>
                                 <h1 className="text-xl font-bold text-gray-900 leading-tight">SNS College of <br />Allied Health Sciences</h1>
                             </div>
@@ -195,7 +195,7 @@ export default function Layout() {
                     <div className="grid md:grid-cols-4 gap-8 mb-8">
                         <div>
                             <div className="flex items-center space-x-3 mb-4">
-                                <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png" alt="SNS Allied Health Science Logo" className="h-12 w-auto bg-white rounded p-1" />
+                                <img src="https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/aHR0cHM6Ly9tZWRpYS5uYXVrcmkuY29tL21lZGlhL2FiY29tcGxvZ28vc25zLWNvbGxlZ2Utb2YtYWxsaWVkLWhlYWx0aC1zY2llbmNlcy1vcmlnaW5hbC5qcGc.png" alt="SNS Allied Health Sciences Logo" className="h-12 w-auto bg-white rounded p-1" />
                                 <div><h3 className="text-white font-bold leading-tight">SNS College of Allied Health Sciences</h3></div>
                             </div>
                             <p className="text-sm leading-relaxed">SNS Kalvi Nagar, Sathy Main Road (NH-209), Kurumbapalayam, Saravanampatti Post, Coimbatore - 641 035.</p>
