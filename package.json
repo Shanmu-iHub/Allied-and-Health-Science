@@ -13,12 +13,18 @@
   },
   "dependencies": {
     "@hono/node-server": "^1.19.9",
-    "hono": "^4.11.4"
+    "hono": "^4.11.4",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.0"
   },
   "devDependencies": {
     "@hono/vite-build": "^1.2.0",
     "@hono/vite-dev-server": "^0.18.2",
     "@types/node": "^20.0.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
     "autoprefixer": "^10.4.23",
     "jiti": "^2.6.1",
     "postcss": "^8.5.6",

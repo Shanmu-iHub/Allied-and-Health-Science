@@ -1,297 +1,182 @@
-import { ParentsTestimonialsCarousel } from '../components/testimonials'
+import { Link } from 'react-router-dom'
 
-export const HomePage = () => {
-    return `
-    <!-- Hero Section with Real SNS Content -->
-    <section class="relative text-white py-24 lg:py-32 overflow-hidden">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="/static/images/hero.png" alt="SNSCAHS Campus" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-r from-black/10 via-black/10 to-transparent"></div>
-        </div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6">
-                        <i class="fas fa-trophy text-yellow-400 mr-2"></i>
-                        <span class="text-sm font-semibold tracking-wide">First Indian Institute to Implement Design Thinking in Education</span>
-                    </div>
-                    
-                    <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight font-display">
-                        <a href="/about" class="hover:text-orange-400 transition duration-300">
-                            SNS College of <br/>
-                            <span class="text-orange-500 text-4xl lg:text-5xl uppercase block mt-2">Allied Health Science</span>
-                        </a>
-                    </h1>
-                    
-                    <div class="h-1 w-24 bg-orange-500 mb-8 rounded-full"></div>
+const testimonials = [
+    { name: 'Priya Suresh', role: 'B.Sc. Cardiac Technology, 2023', text: 'The clinical training at SNSCAHS is unparalleled. I secured a position at a leading cardiac center before even graduating!', img: 'https://randomuser.me/api/portraits/women/44.jpg' },
+    { name: 'Arjun Rajan', role: 'B.Sc. Physician Assistant, 2023', text: 'The Design Thinking approach completely changed how I see patient care. I am now working at Apollo Hospitals.', img: 'https://randomuser.me/api/portraits/men/32.jpg' },
+    { name: 'Meena Krishnan', role: 'B.Sc. Radiography, 2022', text: 'World-class labs and dedicated faculty. The best decision of my life was choosing SNSCAHS.', img: 'https://randomuser.me/api/portraits/women/68.jpg' },
+]
 
-                    <p class="text-xl lg:text-2xl mb-6 text-gray-200 leading-relaxed max-w-xl">
-                        Affiliated to <strong class="text-white">The Tamil Nadu Dr.MGR Medical University, Chennai</strong>. Redesigning health science education through clinical excellence and innovation.
-                    </p>
+const courses = [
+    { href: '/courses/cardiac-technology', img: 'https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Cardiac-Technology.jpg', title: 'Cardiac Technology', color: 'text-orange-600', desc: 'Specialized training in invasive and non-invasive cardiovascular procedures.' },
+    { href: '/courses/physician-assistant', img: 'https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Physicia-Assistant.jpg', title: 'Physician Assistant', color: 'text-blue-600', desc: 'Comprehensive clinical practice training to support physicians.' },
+    { href: '/courses/radiography', img: 'https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Radiography-and-Imaging-Technology.jpg', title: 'Radiography & Imaging', color: 'text-purple-600', desc: 'Advanced training in medical imaging technologies.' },
+    { href: '/courses/operation-theatre', img: 'https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Operation-Theater-and-Anaesthesia-Technology.jpg', title: 'OT & Anesthesia', color: 'text-green-600', desc: 'Specialized training in surgical assistance and anesthesia equipment.' },
+]
 
-                    <p class="text-sm lg:text-base mb-8 text-gray-200 leading-relaxed max-w-xl">
-                        Empowering future healthcare professionals with cutting-edge clinical training and a Design Thinking mindset at Coimbatore's premier health science institution.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                        <a href="/admissions" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-orange-500/30 transition transform hover:-translate-y-1 flex items-center justify-center">
-                            Apply for 2026-27
-                            <i class="fas fa-arrow-right ml-2 text-sm"></i>
-                        </a>
-                        <a href="/about" class="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center justify-center">
-                            <i class="fas fa-play mr-2 text-sm"></i>
-                            About Us
-                        </a>
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row gap-4 text-xs text-gray-200">
-                        <div class="inline-flex items-center">
-                            <i class="fas fa-circle-check text-green-400 mr-2"></i>
-                            Dr.MGR Medical University Affiliated
-                        </div>
-                        <div class="inline-flex items-center">
-                            <i class="fas fa-hospital text-green-400 mr-2"></i>
-                            Clinical Hospital Connect
-                        </div>
-                        <div class="inline-flex items-center">
-                            <i class="fas fa-calendar text-green-400 mr-2"></i>
-                            Innovative Learning
-                        </div>
-                    </div>
+export default function Home() {
+    return (
+        <>
+            {/* Hero */}
+            <section className="relative text-white py-24 lg:py-32 overflow-hidden">
+                <div className="absolute inset-0 z-0">
+                    <img src="/static/images/hero.png" alt="SNSCAHS Campus" className="w-full h-full object-cover" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
                 </div>
-                
-                <div class="hidden lg:block relative">
-                    <!-- Optional: Add a floated refined card or keep clean to show the background image -->
-                    <!-- Keeping it clean to showcase the 'Real' image -->
-                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 shadow-2xl">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
-                                <div class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">10:1</div>
-                                <div class="text-xs text-gray-200 mt-1">Student Teacher Ratio</div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <div className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 mb-6">
+                                <i className="fas fa-trophy text-yellow-400 mr-2"></i>
+                                <span className="text-sm font-semibold tracking-wide">First Indian Institute to Implement Design Thinking in Education</span>
                             </div>
-                            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
-                                <div class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">60%</div>
-                                <div class="text-xs text-gray-200 mt-1">10+ Years Experience</div>
+                            <h1 className="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
+                                <Link to="/about" className="hover:text-orange-400 transition duration-300">
+                                    SNS College of <br />
+                                    <span className="text-orange-500 text-4xl lg:text-5xl uppercase block mt-2">Allied Health Science</span>
+                                </Link>
+                            </h1>
+                            <div className="h-1 w-24 bg-orange-500 mb-8 rounded-full"></div>
+                            <p className="text-xl lg:text-2xl mb-6 text-gray-200 leading-relaxed max-w-xl">
+                                Affiliated to <strong className="text-white">The Tamil Nadu Dr.MGR Medical University, Chennai</strong>. Redesigning health science education through clinical excellence.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+                                <Link to="/admissions" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg transition transform hover:-translate-y-1 flex items-center justify-center">
+                                    Apply for 2026-27 <i className="fas fa-arrow-right ml-2 text-sm"></i>
+                                </Link>
+                                <Link to="/about" className="bg-white/10 hover:bg-white/20 backdrop-blur border border-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center justify-center">
+                                    <i className="fas fa-play mr-2 text-sm"></i> About Us
+                                </Link>
                             </div>
-                            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
-                                <div class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">25+</div>
-                                <div class="text-xs text-gray-200 mt-1">Extra Curricular</div>
+                            <div className="flex flex-col sm:flex-row gap-4 text-xs text-gray-200">
+                                <div className="inline-flex items-center"><i className="fas fa-circle-check text-green-400 mr-2"></i>Dr.MGR Medical University Affiliated</div>
+                                <div className="inline-flex items-center"><i className="fas fa-hospital text-green-400 mr-2"></i>Clinical Hospital Connect</div>
+                                <div className="inline-flex items-center"><i className="fas fa-calendar text-green-400 mr-2"></i>Innovative Learning</div>
                             </div>
-                            <div class="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 ease-out hover:scale-105 hover:bg-white/20 hover:shadow-xl hover:border-white/30 cursor-pointer">
-                                <div class="text-4xl font-extrabold text-white transition-transform duration-300 hover:scale-110">100%</div>
-                                <div class="text-xs text-gray-200 mt-1">Placement Support</div>
+                        </div>
+                        <div className="hidden lg:block">
+                            <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 shadow-2xl">
+                                <div className="grid grid-cols-2 gap-4">
+                                    {[['10:1', 'Student Teacher Ratio'], ['60%', '10+ Years Experience'], ['25+', 'Extra Curricular'], ['100%', 'Placement Support']].map(([val, label]) => (
+                                        <div key={label} className="bg-white/10 border border-white/10 rounded-xl p-5 text-center transition-all duration-300 hover:scale-105 hover:bg-white/20">
+                                            <div className="text-4xl font-extrabold text-white">{val}</div>
+                                            <div className="text-xs text-gray-200 mt-1">{label}</div>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Trust Bar -->
-    <section class="py-10 bg-white border-b">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center text-center divide-x divide-gray-100">
-                <div class="p-4">
-                    <div class="text-4xl font-bold text-gray-900 mb-2">100%</div>
-                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Clinical Training</div>
+            {/* Trust Bar */}
+            <section className="py-10 bg-white border-b">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center text-center divide-x divide-gray-100">
+                        {[['100%', 'Clinical Training'], ['5+', 'Specialized B.Sc. Programs'], ['MoUs', 'with Leading Hospitals'], ['SNS iHub', 'Tech & Innovation Lab']].map(([val, label]) => (
+                            <div key={label} className="p-4">
+                                <div className="text-4xl font-bold text-gray-900 mb-2">{val}</div>
+                                <div className="text-sm text-gray-500 font-medium uppercase tracking-wide">{label}</div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div class="p-4">
-                    <div class="text-4xl font-bold text-gray-900 mb-2">5+</div>
-                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Specialized B.Sc. Programs</div>
-                </div>
-                <div class="p-4">
-                    <div class="text-4xl font-bold text-gray-900 mb-2">MoUs</div>
-                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">with Leading Hospitals</div>
-                </div>
-                <div class="p-4">
-                    <div class="text-4xl font-bold text-gray-900 mb-2">SNS iHub</div>
-                    <div class="text-sm text-gray-500 font-medium uppercase tracking-wide">Tech & Innovation Lab</div>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Why SNS Academy -->
-    <section class="py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-orange-600">Why Aspirants Choose SNS Allied Health Science</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    We don't just teach subjects—we redesign professional minds through design thinking, preparing you for clinical challenges.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-lightbulb text-3xl text-orange-600"></i>
+            {/* Why SNS */}
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-orange-600">Why Aspirants Choose SNS Allied Health Science</h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">We don't just teach subjects—we redesign professional minds through design thinking.</p>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">India's 1st Design Thinking Institute</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Redesigning health science education through <strong>Empathy</strong>. Our students learn to identify clinical problems and develop human-centric solutions through advanced healthcare technologies.
-                    </p>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-users text-3xl text-blue-600"></i>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {[
+                            { icon: 'fa-lightbulb', color: 'bg-orange-100 text-orange-600', title: "India's 1st Design Thinking Institute", desc: "Redesigning health science education through Empathy. Our students learn to identify clinical problems and develop human-centric solutions." },
+                            { icon: 'fa-users', color: 'bg-blue-100 text-blue-600', title: 'Clinical Hospital Connect', desc: 'Collaborative partnerships with premier multi-specialty hospitals for intensive hands-on clinical training.' },
+                            { icon: 'fa-hand-holding-heart', color: 'bg-green-100 text-green-600', title: 'Expert Medical Faculty', desc: 'Learn from experienced healthcare professionals dedicated to nurturing the next generation of allied health specialists.' },
+                            { icon: 'fa-rocket', color: 'bg-purple-100 text-purple-600', title: 'SNS Innovation Hub', desc: "Access to SNS iHub—India's Y-Combinator equivalent. Students work with AI, IoT, Robotics, AR/VR labs." },
+                            { icon: 'fa-building', color: 'bg-pink-100 text-pink-600', title: 'World-Class SPINE Center', desc: '5-level activity center with swimming pool, indoor cricket, gym, music studio, dance studio, theater, and more.' },
+                            { icon: 'fa-layer-group', color: 'bg-indigo-100 text-indigo-600', title: '5 Pillars Development', desc: 'Learning, Upskilling, Innovation, Networking, Character Building—comprehensive development for future leaders.' },
+                        ].map(({ icon, color, title, desc }) => (
+                            <div key={title} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
+                                <div className={`w-16 h-16 ${color.split(' ')[0]} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition`}>
+                                    <i className={`fas ${icon} text-3xl ${color.split(' ')[1]}`}></i>
+                                </div>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4">{title}</h3>
+                                <p className="text-gray-600 leading-relaxed">{desc}</p>
+                            </div>
+                        ))}
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Clinical Hospital Connect</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Collaborative partnerships with premier multi-specialty hospitals for intensive hands-on clinical training, ensuring graduates are workforce-ready.
-                    </p>
                 </div>
-                
-                <!-- Card 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-hand-holding-heart text-3xl text-green-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Expert Medical Faculty</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Learn from experienced healthcare professionals and researchers dedicated to nurturing the next generation of allied health specialists.
-                    </p>
-                </div>
-                
-                <!-- Card 4 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-rocket text-3xl text-purple-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">SNS Innovation Hub</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Access to SNS iHub—India's Y-Combinator equivalent. Students work with AI, IoT, Robotics, AR/VR labs preparing them for future careers.
-                    </p>
-                </div>
-                
-                <!-- Card 5 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-pink-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-building text-3xl text-pink-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">World-Class SPINE Center</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        5-level activity center with swimming pool, indoor cricket, gym, music studio, dance studio, theater, and more—everything under one roof.
-                    </p>
-                </div>
-                
-                <!-- Card 6 -->
-                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition duration-300 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i class="fas fa-layer-group text-3xl text-indigo-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">5 Pillars Development</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        <strong>Learning, Upskilling, Innovation, Networking, Character Building</strong>—comprehensive development for future leaders.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Academic Programs Overview -->
-    <section class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                 <span class="text-orange-600">Excellence in Health Science Education</span>
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    World-class curriculum enhanced with design thinking, clinical excellence, and innovation in health science education.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Course 1 -->
-                <a href="/courses/cardiac-technology" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-56 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Cardiac-Technology.jpg" alt="Cardiac Technology" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
+            {/* Academic Programs */}
+            <section className="py-24 bg-white">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+                            <span className="text-orange-600">Excellence in Health Science Education</span>
+                        </h2>
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">World-class curriculum enhanced with design thinking and clinical excellence.</p>
                     </div>
-                    <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Cardiac Technology</h3>
-                        <p class="text-orange-600 font-semibold text-sm mb-3">4-Year Degree Program</p>
-                        <p class="text-gray-600 text-sm line-clamp-3">
-                            Specialized training in invasive and non-invasive cardiovascular procedures and diagnosis.
-                        </p>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {courses.map(({ href, img, title, color, desc }) => (
+                            <Link key={href} to={href} className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
+                                <div className="h-56 overflow-hidden relative">
+                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
+                                    <img src={img} alt={title} className="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" />
+                                </div>
+                                <div className="p-6 bg-white">
+                                    <h3 className="text-2xl font-bold text-gray-900 mb-1">{title}</h3>
+                                    <p className={`${color} font-semibold text-sm mb-3`}>4-Year Degree Program</p>
+                                    <p className="text-gray-600 text-sm line-clamp-3">{desc}</p>
+                                </div>
+                            </Link>
+                        ))}
                     </div>
-                </a>
-                
-                <!-- Course 2 -->
-                <a href="/courses/physician-assistant" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-56 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Physicia-Assistant.jpg" alt="Physician Assistant" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Physician Assistant</h3>
-                        <p class="text-blue-600 font-semibold text-sm mb-3">4-Year Degree Program</p>
-                        <p class="text-gray-600 text-sm line-clamp-3">
-                            Comprehensive clinical practice training to support physicians in diverse medical environments.
-                        </p>
-                    </div>
-                </a>
-                
-                <!-- Course 3 -->
-                <a href="/courses/radiography" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-56 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Radiography-and-Imaging-Technology.jpg" alt="Radiography" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">Radiography & Imaging</h3>
-                        <p class="text-purple-600 font-semibold text-sm mb-3">4-Year Degree Program</p>
-                        <p class="text-gray-600 text-sm line-clamp-3">
-                            Training in medical imaging technologies including X-Ray, CT, and MRI for accurate diagnosis.
-                        </p>
-                    </div>
-                </a>
-                
-                <!-- Course 4 -->
-                <a href="/courses/operation-theatre" class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500">
-                    <div class="h-56 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition z-10"></div>
-                        <img src="https://snscahs.org/wp-content/uploads/2023/11/B.Sc-Operation-Theater-and-Anaesthesia-Technology.jpg" alt="OT & Anesthesia" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700">
-                    </div>
-                    <div class="p-6 bg-white relative z-20">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-1">OT & Anesthesia</h3>
-                        <p class="text-green-600 font-semibold text-sm mb-3">4-Year Degree Program</p>
-                        <p class="text-gray-600 text-sm line-clamp-3">
-                            Specialized training in surgical assistance, sterilization, and anesthesia equipment management.
-                        </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+                </div>
+            </section>
 
-    ${ParentsTestimonialsCarousel()}
+            {/* Testimonials */}
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-16">
+                        <h2 className="text-4xl font-bold mb-4">Student Success Stories</h2>
+                        <p className="text-xl text-gray-600">Hear from our graduates who are making an impact in healthcare.</p>
+                    </div>
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {testimonials.map(({ name, role, text, img }) => (
+                            <div key={name} className="bg-white rounded-2xl p-8 shadow-lg">
+                                <div className="flex items-center mb-6">
+                                    <img src={img} alt={name} className="w-16 h-16 rounded-full object-cover mr-4" />
+                                    <div>
+                                        <h4 className="font-bold text-gray-900">{name}</h4>
+                                        <p className="text-orange-600 text-sm">{role}</p>
+                                    </div>
+                                </div>
+                                <p className="text-gray-600 italic">"{text}"</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl lg:text-5xl font-bold mb-4">
-                Ready to Shape Your Medical Career?
-            </h2>
-            <p class="text-xl opacity-90 mb-8">
-                Admissions open for Academic Year 2026-27. Secure your future in healthcare.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/admissions" class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-xl">
-                    <i class="fas fa-pen-to-square mr-2"></i>
-                    Apply Now
-                </a>
-                <a href="/contact" class="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition">
-                    <i class="fas fa-phone mr-2"></i>
-                    Schedule Campus Visit
-                </a>
-            </div>
-        </div>
-    </section>
-  `;
-};
+            {/* CTA */}
+            <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600 text-white">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-4xl lg:text-5xl font-bold mb-4">Ready to Shape Your Medical Career?</h2>
+                    <p className="text-xl opacity-90 mb-8">Admissions open for Academic Year 2026-27. Secure your future in healthcare.</p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Link to="/admissions" className="bg-white text-orange-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-xl">
+                            <i className="fas fa-pen-to-square mr-2"></i>Apply Now
+                        </Link>
+                        <Link to="/contact" className="bg-white/20 backdrop-blur-lg hover:bg-white/30 text-white px-8 py-4 rounded-xl font-bold text-lg transition">
+                            <i className="fas fa-phone mr-2"></i>Schedule Campus Visit
+                        </Link>
+                    </div>
+                </div>
+            </section>
+        </>
+    )
+}

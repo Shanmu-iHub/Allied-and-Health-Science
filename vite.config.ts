@@ -1,18 +1,10 @@
-import build from '@hono/vite-build'
-import devServer from '@hono/vite-dev-server'
+import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: './',
-  plugins: [
-    build({
-      entry: 'src/index.tsx'
-    }),
-    devServer({
-      entry: 'src/index.tsx'
-    })
-  ],
+  plugins: [react()],
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    emptyOutDir: true,
   }
 })
