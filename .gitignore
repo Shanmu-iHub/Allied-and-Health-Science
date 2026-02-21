@@ -9,7 +9,7 @@ pids
 
 # Compiled binary addons
 build
-dist
+# dist
 
 # dotenv environment variables file
 .env
