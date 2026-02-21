@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy Static Site
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-commit:
+  build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -23,18 +23,20 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build project
+      - name: Build Vite SSR bundle
         run: npm run build
 
-      - name: Commit and Push dist + server.js
+      - name: Generate static HTML files
+        run: npm run generate
+
+      - name: Commit and Push public_html
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/ server.js package.json package-lock.json
-          # Check if there are changes to commit
+          git add public_html/ dist/
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Auto-build: update dist and server files"
+            git commit -m "Auto-build: regenerate static site"
             git push
           fi
