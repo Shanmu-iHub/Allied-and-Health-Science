@@ -7,7 +7,7 @@ import path from 'path'
 // Import the built app
 import app from './dist/index.js'
 
-const OUTPUT_DIR = './public_html'
+const OUTPUT_DIR = '.'
 
 // All routes to pre-render
 const ROUTES = [
