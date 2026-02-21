@@ -3,6 +3,7 @@ import devServer from '@hono/vite-dev-server'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  base: './',
   plugins: [
     build({
       entry: 'src/index.tsx'
@@ -10,5 +11,8 @@ export default defineConfig({
     devServer({
       entry: 'src/index.tsx'
     })
-  ]
+  ],
+  build: {
+    outDir: 'dist'
+  }
 })
