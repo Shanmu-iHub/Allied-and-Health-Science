@@ -1,5 +1,2 @@
-RewriteEngine On
-RewriteBase /
-
-# Redirect all requests to the Node.js application
-RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
+# Hostinger Node.js hosting - no Apache proxy needed
+# Node.js app is managed directly by Hostinger's panel

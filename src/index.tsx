@@ -167,19 +167,4 @@ app.get('/stanford-pathway', (c) => {
     return c.html(Layout(StanfordPathwayPage(), 'Pathway to Stanford', 'stanford-pathway'))
 })
 
-import { serve } from '@hono/node-server'
-
-// ... (existing exports and logic)
-
-const isProduction = process.env.NODE_ENV === 'production'
-
-if (isProduction) {
-    const port = Number(process.env.PORT) || 3000
-    console.log(`Server is running on port ${port}`)
-    serve({
-        fetch: app.fetch,
-        port
-    })
-}
-
 export default app
