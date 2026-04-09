@@ -94,17 +94,34 @@
 
         .b24-form-field {
             margin-bottom: 24px !important;
+            position: relative !important;
         }
 
-        /* Remove Bitrix auto separators */
+        /* Remove Bitrix auto separators and double lines */
         .b24-form-separator,
         .b24-form-field-separator,
+        .b24-form-field-shadow,
+        .b24-form-control-shadow,
+        .b24-form-field-line,
+        .b24-form-control-line,
+        .b24-form-field-line-1,
+        .b24-form-field-line-2,
+        .b24-form-field-line-3,
+        [class*="b24-form-field-line"],
+        [class*="b24-form-control-line"],
         .b24-form-field::before,
-        .b24-form-field::after {
+        .b24-form-field::after,
+        .b24-form-control::before,
+        .b24-form-control::after {
             display: none !important;
             content: none !important;
             height: 0 !important;
             border: none !important;
+            position: absolute !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            z-index: -1 !important;
         }
 
         /* ================= LABEL HANDLING ================= */
@@ -114,8 +131,9 @@
             pointer-events: none !important;
         }
 
-        /* ================= INPUT FIELDS ================= */
-        .b24-form-control {
+        /* ================= INPUT & SELECT FIELDS ================= */
+        .b24-form-control,
+        select.b24-form-control {
             width: 100% !important;
             background: #f7fafc !important;
             border: 2px solid #e2e8f0 !important;
@@ -126,6 +144,9 @@
             color: #1a202c !important;
             box-shadow: none !important;
             transition: all 0.3s ease !important;
+            appearance: none !important;
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
         }
 
         .b24-form-control::placeholder {
@@ -143,16 +164,16 @@
         /* ================= DROPDOWN ================= */
         .b24-form-dropdown {
             border-radius: 12px !important;
-            border: 2px solid #e2e8f0 !important;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
-            background: white !important;
+            border: 2px solid #ff000000  !important;
+            box-shadow: 0 10px 25px rgba(253, 251, 251, 0) !important;
+             background: white !important;
         }
 
         .b24-form-dropdown-item {
             padding: 12px 18px !important;
             font-size: 15px !important;
             font-family: 'Poppins', sans-serif !important;
-            color: #1a202c !important;
+            color: #4d7399 !important;
             transition: all 0.2s ease !important;
         }
 
@@ -167,7 +188,7 @@
             margin-top: 28px !important;
             padding: 16px 24px !important;
             border-radius: 12px !important;
-            background: linear-gradient(135deg, #00A0E3 0%, #0284c7 100%) !important;
+            background: #00A0E3 !important;
             color: #ffffff !important;
             font-size: 16px !important;
             font-weight: 600 !important;
@@ -181,10 +202,54 @@
         .b24-form-btn:hover {
             transform: translateY(-2px) !important;
             box-shadow: 0 6px 20px rgba(0, 160, 227, 0.5) !important;
+            background: #0284c7 !important;
         }
 
         .b24-form-btn:active {
             transform: translateY(0) !important;
+        }
+
+        /* Bitrix form container visibility */
+        #bitrix-form-container {
+            position: relative;
+            z-index: 1000;
+        }
+
+        /* Target all yellow/amber Bitrix elements */
+        .b24-form-header, 
+        .b24-form-control-required-symbol,
+        .b24-form-field-icon,
+        .b24-form-question-icon {
+            color: #00A0E3 !important;
+        }
+
+        .b24-form-control-required-symbol {
+            color: #ff4d4d !important;
+        }
+        
+        /* Remove any double lines or shadows below fields */
+        [class*="line"],
+        [class*="shadow"] {
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+        .b24-form-control-shadow,
+        .b24-form-field-shadow,
+        .b24-form-shadow,
+        .b24-form-field-line,
+        .b24-form-control-line,
+        .b24-form-field-line-1,
+        .b24-form-field-line-2 {
+            display: none !important;
+            height: 0 !important;
+            overflow: hidden !important;
+        }
+
+        /* Ensure no extra padding at top of form */
+        .b24-form {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
         }
 
         /* ================= FOOTER TEXT ================= */
@@ -293,7 +358,7 @@
         /* ================= LOADING ANIMATION ================= */
         .loading {
             text-align: center;
-            padding: 40px;
+            padding: 10px;
             color: #718096;
         }
 
@@ -308,50 +373,16 @@
         }
 
         @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#00A0E3',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                            DEFAULT: '#00A0E3',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-
 </head>
 
 <body>
     <div class="container">
         <!-- Header -->
-        <div class="header">
-            <h1>SNS College of Allied Health Science</h1>
-            <p>Designing the standard of diagnostic excellence | We are Design Thinkers</p>
-        </div>
-
+       
         <!-- Form Section -->
         <div class="form-section">
             <div class="form-title">
@@ -367,65 +398,11 @@
 
             <!-- Bitrix24 Form -->
             <div id="bitrix-form-container"></div>
-            <script data-b24-form="inline/18/m4ecvi" data-skip-moving="true">
-                    (function (w, d, u) {
-                        var s = d.createElement('script');
-                        s.async = true;
-                        s.src = u + '?' + (Date.now() / 180000 | 0);
-                        var h = d.getElementsByTagName('script')[0];
-                        h.parentNode.insertBefore(s, h);
-                    })(window, document, 'https://cdn.bitrix24.com/b11752903/crm/form/loader_18.js');
-            </script>
+            <script data-b24-form="inline/52/2qc8ap" data-skip-moving="true" async
+                src="https://cdn.bitrix24.com/b11752903/crm/form/loader_52.js"></script>
         </div>
 
-        <!-- Contact Information -->
-        <div class="info-section">
-            <div class="info-grid">
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>Address</h3>
-                        <p>SNS Kalvi Nagar, Sathy Main Road (NH-209),<br>Kurumbapalayam, Saravanampatti Post, Coimbatore
-                            - 641 035.</p>
-                    </div>
-                </div>
 
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>Phone</h3>
-                        <p>Admission: <a href="tel:+919003655855">9003655855</a><br>
-                            Office: <a href="tel:+919003655855">+91 90036 55855</a></p>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>Email</h3>
-                        <p>General: <a href="mailto:office@snscahs.org">office@snscahs.org</a></p>
-                    </div>
-                </div>
-
-                <div class="info-item">
-                    <div class="info-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <div class="info-content">
-                        <h3>Visit Us</h3>
-                        <p>Monday - Friday: 9:00 AM - 5:00 PM<br>
-                            Saturday: 9:00 AM - 1:00 PM</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script>
         // Hide loading spinner when form loads
@@ -455,20 +432,26 @@
                 const input = field.querySelector('.b24-form-control');
                 const container = field;
 
+                // 1. Force-hide any lines Bitrix injects
+                field.querySelectorAll('[class*="line"]').forEach(line => {
+                    line.style.setProperty('display', 'none', 'important');
+                    line.style.setProperty('opacity', '0', 'important');
+                    line.style.setProperty('height', '0', 'important');
+                });
+
                 if (label) {
                     const text = label.textContent.trim();
 
-                    // 1. Remove "Admission To Grade"
+                    // Remove Admission To Grade
                     if (text.includes('Admission To Grade')) {
                         container.style.display = 'none';
                         return;
                     }
 
-                    // 2. Replace Academy field with "Choose College" Dropdown
+                    // Replace Academy field with "Choose College" Dropdown
                     if (text.includes('SNSACD') || text.includes('SNS Academy') || text.includes('CBSE SCHOOL')) {
                         label.textContent = "Choose College *";
 
-                        // If it's not already a select, swap it
                         if (input && input.tagName !== 'SELECT' && !input.dataset.replaced) {
                             const select = document.createElement('select');
                             select.className = input.className;
@@ -481,7 +464,6 @@
 
                             input.parentNode.replaceChild(select, input);
 
-                            // Handle Bitrix dynamic value binding if needed
                             select.addEventListener('change', (e) => {
                                 const event = new Event('input', { bubbles: true });
                                 select.dispatchEvent(event);
@@ -490,7 +472,7 @@
                         return;
                     }
 
-                    // 3. Rename "Name of the Child" -> "Name of the Candidate"
+                    // Rename Name of the Child -> Name of the Candidate
                     if (text.includes('Name of the Child')) {
                         label.textContent = text.replace('Name of the Child', 'Name of the Candidate');
                         if (input && input.tagName !== 'SELECT') {
@@ -499,7 +481,7 @@
                         }
                     }
 
-                    // 4. Rename "Parent Name" -> "Parent / Guardian Name"
+                    // Rename Parent Name -> Parent / Guardian Name
                     if (text.includes('Parent Name')) {
                         label.textContent = text.replace('Parent Name', 'Parent / Guardian Name');
                         if (input && input.tagName !== 'SELECT') {
@@ -508,7 +490,7 @@
                         }
                     }
 
-                    // Generic Placeholder Fix for other fields
+                    // Generic Placeholder Fix
                     if (input && input.tagName !== 'SELECT' && !input.placeholder) {
                         let cleanText = text.replace(/\s*\*$/, '').trim();
                         let required = text.includes('*');
@@ -518,81 +500,22 @@
             });
         }
 
-        // Use MutationObserver for robust dynamic loading handling
         const observer = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
-                if (mutation.addedNodes.length) {
-                    applyFormFixes();
-                }
+                if (mutation.addedNodes.length) applyFormFixes();
             });
         });
 
         const target = document.getElementById('bitrix-form-container');
-        if (target) {
-            observer.observe(target, { childList: true, subtree: true });
-        }
+        if (target) observer.observe(target, { childList: true, subtree: true });
 
-        // Initial apply just in case
         applyFormFixes();
-
-        // Backup periodic check
-        const fixInterval = setInterval(() => {
-            applyFormFixes();
-            // If the form is clearly loaded and we've hidden fields, we can slow down or stop
-            if (document.querySelector('.b24-form')) {
-                // Keep running to ensure dynamic errors/re-renders stay fixed
-            }
-        }, 1000);
-
-        // Stop interval after 15 seconds to save resources
-        setTimeout(() => clearInterval(fixInterval), 15000);
-
-        // Form submission tracking
-        document.addEventListener('submit', function (e) {
-            if (e.target.classList.contains('b24-form')) {
-                console.log('Form submitted successfully!');
-            }
-        });
+        setInterval(applyFormFixes, 1000);
     </script>
 
     <!-- Mobile Bottom Navigation -->
-    <div class="fixed bottom-0 left-0 w-full bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.05)] z-50 md:hidden flex justify-between items-end px-2 pb-5 pt-2 rounded-t-2xl">
-        <!-- Home -->
-        <a href="./index.html" class="flex flex-col items-center justify-center w-1/5 pb-1 text-gray-400 hover:text-primary-600 transition-colors">
-            <i class="fas fa-home text-xl mb-1"></i>
-            <span class="text-[10px] font-semibold mt-1">Home</span>
-        </a>
-
-        <!-- Placements -->
-        <a href="https://iipc.snsgroups.com/" class="flex flex-col items-center justify-center w-1/5 pb-1 text-gray-400 hover:text-primary-600 transition-colors">
-            <i class="fas fa-chart-line text-xl mb-1"></i>
-            <span class="text-[10px] font-medium mt-1">Placements</span>
-        </a>
-
-        <!-- Programs (Floating/Prominent) -->
-        <div class="w-1/5 flex flex-col items-center justify-end relative pb-1">
-            <a href="./pages/courses.html" class="absolute bottom-6 flex items-center justify-center bg-primary-500 w-14 h-14 rounded-full text-white shadow-lg border-4 border-white transform transition hover:scale-105 active:scale-95 z-10">
-                <i class="fas fa-graduation-cap text-2xl"></i>
-            </a>
-            <span class="text-[10px] font-medium text-gray-400 mt-1">Programs</span>
-        </div>
-
-        <!-- About Us -->
-        <a href="./pages/about.html" class="flex flex-col items-center justify-center w-1/5 pb-1 text-gray-400 hover:text-primary-600 transition-colors">
-            <i class="fas fa-info-circle text-xl mb-1"></i>
-            <span class="text-[10px] font-medium mt-1">About Us</span>
-        </a>
-
-        <!-- Apply -->
-        <a href="./pages/apply-now.html" class="flex flex-col items-center justify-center w-1/5 pb-1 text-gray-400 hover:text-primary-600 transition-colors">
-            <i class="fas fa-pen-to-square text-xl mb-1"></i>
-            <span class="text-[10px] font-medium mt-1">Apply</span>
-        </a>
-    </div>
-
-    <!-- Ensure body doesn't overlap with fixed bottom nav -->
+   
     <div class="h-24 md:hidden"></div>
-
 </body>
 
 </html>

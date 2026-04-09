@@ -65,15 +65,28 @@
             margin-bottom: 24px !important;
         }
 
-        /* Remove Bitrix auto separators */
+        /* Remove Bitrix auto separators and double lines */
         .b24-form-separator,
         .b24-form-field-separator,
+        .b24-form-field-shadow,
+        .b24-form-control-shadow,
+        .b24-form-field-line,
+        .b24-form-control-line,
+        .b24-form-field-line-1,
+        .b24-form-field-line-2,
+        .b24-form-field-line-3,
         .b24-form-field::before,
-        .b24-form-field::after {
+        .b24-form-field::after,
+        .b24-form-control::before,
+        .b24-form-control::after {
             display: none !important;
             content: none !important;
             height: 0 !important;
             border: none !important;
+            position: absolute !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
         }
 
         /* ================= LABEL HANDLING ================= */
@@ -83,8 +96,9 @@
             pointer-events: none !important;
         }
 
-        /* ================= INPUT FIELDS ================= */
-        .b24-form-control {
+        /* ================= INPUT & SELECT FIELDS ================= */
+        .b24-form-control,
+        select.b24-form-control {
             width: 100% !important;
             background: #f7fafc !important;
             border: 2px solid #e2e8f0 !important;
@@ -95,6 +109,9 @@
             color: #1a202c !important;
             box-shadow: none !important;
             transition: all 0.3s ease !important;
+            appearance: none !important; /* Remove default arrow to style custom */
+            -webkit-appearance: none !important;
+            -moz-appearance: none !important;
         }
 
         .b24-form-control::placeholder {
@@ -136,7 +153,7 @@
             margin-top: 28px !important;
             padding: 16px 24px !important;
             border-radius: 12px !important;
-            background: linear-gradient(135deg, #00A0E3 0%, #0284c7 100%) !important;
+            background: #00A0E3 !important; /* Changed to primary blue */
             color: #ffffff !important;
             font-size: 16px !important;
             font-weight: 600 !important;
@@ -150,10 +167,63 @@
         .b24-form-btn:hover {
             transform: translateY(-2px) !important;
             box-shadow: 0 6px 20px rgba(0, 160, 227, 0.5) !important;
+            background: #0284c7 !important;
         }
 
         .b24-form-btn:active {
             transform: translateY(0) !important;
+        }
+
+        /* Bitrix form container visibility */
+        #bitrix-form-container {
+            position: relative;
+            z-index: 1000;
+        }
+
+        /* Branding: Change yellow symbols to primary blue */
+        .b24-form-header-close, .b24-form-popup-close, .b24-form-close {
+            background-color: #00A0E3 !important;
+            color: #ffffff !important;
+        }
+
+        /* Target all yellow/amber Bitrix elements */
+        .b24-form-header, 
+        .b24-form-control-required-symbol,
+        .b24-form-field-icon,
+        .b24-form-question-icon {
+            color: #00A0E3 !important;
+        }
+
+        /* Support for asterisk specifically if it's yellow */
+        .b24-form-control-required-symbol {
+            color: #ff4d4d !important;
+        }
+        
+        /* If the user specifically wants the 'X' circle Blue */
+        .b24-form-header-close {
+            background-color: #00A0E3 !important;
+            border-color: #00A0E3 !important;
+        }
+
+        /* Remove any double lines or shadows below fields */
+        .b24-form-control-shadow,
+        .b24-form-field-shadow,
+        .b24-form-shadow,
+        .b24-form-field-line,
+        .b24-form-control-line,
+        .b24-form-field-line-1,
+        .b24-form-field-line-2 {
+            display: none !important;
+            box-shadow: none !important;
+            border: none !important;
+            height: 0 !important;
+            overflow: hidden !important;
+        }
+
+        /* Ensure no extra padding at top of form */
+        .b24-form {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
         }
 
         /* ================= FOOTER TEXT ================= */
@@ -468,31 +538,22 @@
                     class="bg-white rounded-2xl shadow-2xl p-0 overflow-hidden border border-gray-100 max-w-2xl mx-auto">
                     <!-- Admission Form -->
                     <div class="p-8">
-                        <div class="flex items-center mb-6">
-                            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
-                                <i class="fas fa-user-graduate text-primary-600 text-xl"></i>
-                            </div>
-                            <h2 class="text-2xl font-bold text-gray-900">Admission & Enquiry Form</h2>
+                        <div class="text-center mb-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">Admission and Enquiry Form</h2>
+                            <p class="text-gray-600 text-sm">Fill out the form below and we'll get back to you shortly</p>
                         </div>
 
                         <!-- Loading State -->
-                        <div class="text-center py-10" id="loading">
+                        <div class="text-center py-4" id="loading">
                             <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4">
                             </div>
-                            <p class="text-gray-600">Loading form...</p>
+                            <p class="text-gray-600 text-sm">Loading form...</p>
                         </div>
 
                         <!-- Bitrix24 Form -->
                         <div id="bitrix-form-container"></div>
-                        <script data-b24-form="inline/18/m4ecvi" data-skip-moving="true">
-                                (function (w, d, u) {
-                                    var s = d.createElement('script');
-                                    s.async = true;
-                                    s.src = u + '?' + (Date.now() / 180000 | 0);
-                                    var h = d.getElementsByTagName('script')[0];
-                                    h.parentNode.insertBefore(s, h);
-                                })(window, document, 'https://cdn.bitrix24.com/b11752903/crm/form/loader_18.js');
-                        </script>
+                        <script data-b24-form="inline/52/2qc8ap" data-skip-moving="true" async
+                            src="https://cdn.bitrix24.com/b11752903/crm/form/loader_52.js"></script>
                     </div>
                 </div>
             </div>
@@ -647,6 +708,13 @@
                 const label = field.querySelector('.b24-form-control-label');
                 const input = field.querySelector('.b24-form-control');
                 const container = field;
+
+                // 1. Force-hide any lines Bitrix injects
+                field.querySelectorAll('[class*="line"]').forEach(line => {
+                    line.style.setProperty('display', 'none', 'important');
+                    line.style.setProperty('opacity', '0', 'important');
+                    line.style.setProperty('height', '0', 'important');
+                });
 
                 if (label) {
                     const text = label.textContent.trim();
